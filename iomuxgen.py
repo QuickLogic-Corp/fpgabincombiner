@@ -202,7 +202,7 @@ if __name__ == '__main__':
             pad_num_match = re.match(r"^IO_([0-9]+)$", iomux_csv_row[0])
 
             if pad_num_match is None:
-                print("ERROR: IO PAD Name in Unexpected format", iomux_iomux_csv_rowrow[0])
+                print("ERROR: IO PAD Name in Unexpected format", iomux_csv_row[0])
                 continue
 
             pad_num = int(pad_num_match.group(1))
