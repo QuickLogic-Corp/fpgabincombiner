@@ -1,0 +1,1865 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+2406 (git sha1 9ac3484, x86_64-conda_cos6-linux-gnu-gcc 1.24.0.133_b0863d8_dirty -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/anaconda3/conda-bld/yosys_1607410735049/work=/usr/local/src/conda/yosys-0.8.0_0003_e80fb742f_20201208_122808 -fdebug-prefix-map=/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda=/usr/local/src/conda-prefix -fPIC -Os)
+
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v' using frontend `verilog' --
+
+1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v' to AST representation.
+Generating RTLIL representation for module `\AL4S3B_FPGA_QL_Reserved'.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165.1-204.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:214.1-223.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v' using frontend `verilog' --
+
+2. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v' to AST representation.
+Generating RTLIL representation for module `\AL4S3B_FPGA_RAMs'.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r512x16_512x16.v' using frontend `verilog' --
+
+3. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r512x16_512x16.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r512x16_512x16.v' to AST representation.
+Generating RTLIL representation for module `\r512x16_512x16'.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r1024x8_1024x8.v' using frontend `verilog' --
+
+4. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r1024x8_1024x8.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r1024x8_1024x8.v' to AST representation.
+Generating RTLIL representation for module `\r1024x8_1024x8'.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Top.v' using frontend `verilog' --
+
+5. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Top.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Top.v' to AST representation.
+Generating RTLIL representation for module `\top'.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v' using frontend `verilog' --
+
+6. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v' to AST representation.
+Generating RTLIL representation for module `\AL4S3B_FPGA_Registers'.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:203.1-220.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r2048x8_2048x8.v' using frontend `verilog' --
+
+7. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r2048x8_2048x8.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r2048x8_2048x8.v' to AST representation.
+Generating RTLIL representation for module `\r2048x8_2048x8'.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r1024x16_1024x16.v' using frontend `verilog' --
+
+8. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r1024x16_1024x16.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r1024x16_1024x16.v' to AST representation.
+Generating RTLIL representation for module `\r1024x16_1024x16'.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v' using frontend `verilog' --
+
+9. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v' to AST representation.
+Generating RTLIL representation for module `\AL4S3B_FPGA_IP'.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:250.1-271.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+-- Parsing `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r512x32_512x32.v' using frontend `verilog' --
+
+10. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r512x32_512x32.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/r512x32_512x32.v' to AST representation.
+Generating RTLIL representation for module `\r512x32_512x32'.
+Successfully finished Verilog frontend.
+
+-- Running command `tcl /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/quicklogic/synth.tcl' --
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+11. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\fpga_interconnect'.
+Generating RTLIL representation for module `\CLOCK_CELL'.
+Generating RTLIL representation for module `\BIDIR_CELL'.
+Generating RTLIL representation for module `\SDIOMUX_CELL'.
+Generating RTLIL representation for module `\T_FRAG'.
+Generating RTLIL representation for module `\B_FRAG'.
+Generating RTLIL representation for module `\Q_FRAG'.
+Generating RTLIL representation for module `\F_FRAG'.
+Generating RTLIL representation for module `\C_FRAG'.
+Generating RTLIL representation for module `\ASSP'.
+Generating RTLIL representation for module `\MULT'.
+Generating RTLIL representation for module `\GMUX_IP'.
+Generating RTLIL representation for module `\GMUX_IC'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_sim.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_sim.v' to AST representation.
+Generating RTLIL representation for module `\RAM_CE0_FE0_PR0_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE0_PR0_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE0_PR0_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE0_PR0_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE0_PR1_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE0_PR1_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE0_PR1_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE0_PR1_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D0_PR0_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D0_PR0_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D0_PR0_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D0_PR0_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D0_PR1_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D0_PR1_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D0_PR1_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D0_PR1_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D1_PR0_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D1_PR0_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D1_PR0_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D1_PR0_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D1_PR1_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D1_PR1_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D1_PR1_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE0_FE1_D1_PR1_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA0_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA1_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA2_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA2_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR0_WSA2_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA0_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA1_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA2_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA2_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE0_PR1_WSA2_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA0_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA1_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA2_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA2_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR0_WSA2_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA0_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA1_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA2_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA2_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D0_PR1_WSA2_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA0_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA1_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA2_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA2_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR0_WSA2_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA0_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA0_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA0_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA1_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA1_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA1_WSB2_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA2_WSB0_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA2_WSB1_VPR'.
+Generating RTLIL representation for module `\RAM_CE1_FE1_D1_PR1_WSA2_WSB2_VPR'.
+Successfully finished Verilog frontend.
+
+13. Executing SYNTH_QUICKLOGIC pass.
+
+13.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/cells_sim.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\inv'.
+Generating RTLIL representation for module `\buff'.
+Generating RTLIL representation for module `\logic_0'.
+Generating RTLIL representation for module `\logic_1'.
+Generating RTLIL representation for module `\gclkbuff'.
+Successfully finished Verilog frontend.
+
+13.2. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_cells_sim.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\inpad'.
+Generating RTLIL representation for module `\outpad'.
+Generating RTLIL representation for module `\ckpad'.
+Generating RTLIL representation for module `\bipad'.
+Generating RTLIL representation for module `\dff'.
+Generating RTLIL representation for module `\dffc'.
+Generating RTLIL representation for module `\dffp'.
+Generating RTLIL representation for module `\dffpc'.
+Generating RTLIL representation for module `\dffe'.
+Generating RTLIL representation for module `\dffec'.
+Generating RTLIL representation for module `\dffepc'.
+Generating RTLIL representation for module `\AND2I0'.
+Generating RTLIL representation for module `\mux2x0'.
+Generating RTLIL representation for module `\mux2x1'.
+Generating RTLIL representation for module `\mux4x0'.
+Generating RTLIL representation for module `\mux8x0'.
+Generating RTLIL representation for module `\logic_cell_macro'.
+Generating RTLIL representation for module `\ahb_gen_bfm'.
+Generating RTLIL representation for module `\oscillator_s1'.
+Generating RTLIL representation for module `\sdma_bfm'.
+Generating RTLIL representation for module `\ahb2fb_asynbrig_if'.
+Generating RTLIL representation for module `\fb2ahb_asynbrig_if'.
+Generating RTLIL representation for module `\ahb2fb_asynbrig'.
+Generating RTLIL representation for module `\qlal4s3b_cell_macro_bfm'.
+Generating RTLIL representation for module `\qlal4s3b_cell_macro'.
+Generating RTLIL representation for module `\fifo_controller_model'.
+Generating RTLIL representation for module `\ram'.
+Warning: Replacing memory \ram with list of registers. See /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_cells_sim.v:3671, /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_cells_sim.v:3585, /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_cells_sim.v:3560
+Generating RTLIL representation for module `\x2_model'.
+Generating RTLIL representation for module `\ram_block_8K'.
+Generating RTLIL representation for module `\sw_mux'.
+Generating RTLIL representation for module `\ram8k_2x1_cell'.
+Generating RTLIL representation for module `\ram8k_2x1_cell_macro'.
+Generating RTLIL representation for module `\gpio_cell_macro'.
+Generating RTLIL representation for module `\qlal4s3_mult_32x32_cell'.
+Generating RTLIL representation for module `\qlal4s3_mult_16x16_cell'.
+Generating RTLIL representation for module `\signed_mult'.
+Generating RTLIL representation for module `\qlal4s3_mult_cell_macro'.
+Generating RTLIL representation for module `\RAM_8K_BLK'.
+Generating RTLIL representation for module `\RAM_16K_BLK'.
+Generating RTLIL representation for module `\FIFO_8K_BLK'.
+Generating RTLIL representation for module `\FIFO_16K_BLK'.
+Successfully finished Verilog frontend.
+
+13.3. Executing HIERARCHY pass (managing design hierarchy).
+
+13.3.1. Finding top of design hierarchy..
+root of   1 design levels: r512x32_512x32      
+root of   3 design levels: AL4S3B_FPGA_IP      
+root of   1 design levels: r1024x16_1024x16    
+root of   1 design levels: r2048x8_2048x8      
+root of   0 design levels: AL4S3B_FPGA_Registers
+root of   4 design levels: top                 
+root of   1 design levels: r1024x8_1024x8      
+root of   1 design levels: r512x16_512x16      
+root of   2 design levels: AL4S3B_FPGA_RAMs    
+root of   0 design levels: AL4S3B_FPGA_QL_Reserved
+Automatically selected top as design top module.
+
+13.3.2. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \AL4S3B_FPGA_IP
+Used module:         \AL4S3B_FPGA_QL_Reserved
+Used module:         \AL4S3B_FPGA_RAMs
+Used module:             \r2048x8_2048x8
+Used module:             \r512x32_512x32
+Used module:             \r1024x8_1024x8
+Used module:             \r1024x16_1024x16
+Used module:             \r512x16_512x16
+Used module:         \AL4S3B_FPGA_Registers
+Parameter \APERWIDTH = 17
+Parameter \APERSIZE = 11
+Parameter \FPGA_REG_BASE_ADDRESS = 17'00000000000000000
+Parameter \FPGA_RAM0_BASE_ADDRESS = 17'00010000000000000
+Parameter \FPGA_RAM1_BASE_ADDRESS = 17'00100000000000000
+Parameter \FPGA_RAM2_BASE_ADDRESS = 17'00110000000000000
+Parameter \FPGA_RAM3_BASE_ADDRESS = 17'01000000000000000
+Parameter \FPGA_RAM4_BASE_ADDRESS = 17'01010000000000000
+Parameter \QL_RESERVED_BASE_ADDRESS = 17'01100000000000000
+Parameter \ADDRWIDTH_FAB_REG = 7
+Parameter \DATAWIDTH_FAB_REG = 32
+Parameter \ADDRWIDTH_FAB_RAMs = 11
+Parameter \FPGA_REG_ID_VALUE_ADR = 7'0000000
+Parameter \FPGA_REV_NUM_ADR = 7'0000001
+Parameter \FPGA_GPIO_IN_REG_ADR = 7'0000010
+Parameter \FPGA_GPIO_OUT_REG_ADR = 7'0000011
+Parameter \FPGA_GPIO_OE_REG_ADR = 7'0000100
+Parameter \AL4S3B_DEVICE_ID = 16'0000000000000000
+Parameter \AL4S3B_REV_LEVEL = 0
+Parameter \AL4S3B_GPIO_REG = 8'00000000
+Parameter \AL4S3B_GPIO_OE_REG = 8'00000000
+Parameter \AL4S3B_DEF_REG_VALUE = 32'11111010101111011110111110101100
+Parameter \DEFAULT_READ_VALUE = 32'10111010110111111010101110101100
+Parameter \DEFAULT_CNTR_WIDTH = 3
+Parameter \DEFAULT_CNTR_TIMEOUT = 7
+Parameter \ADDRWIDTH_QL_RESERVED = 7
+Parameter \DATAWIDTH_QL_RESERVED = 32
+Parameter \QL_RESERVED_CUST_PROD_ADR = 7'1111110
+Parameter \QL_RESERVED_REVISIONS_ADR = 7'1111111
+Parameter \QL_RESERVED_CUSTOMER_ID = 8'00000001
+Parameter \QL_RESERVED_PRODUCT_ID = 8'00000000
+Parameter \QL_RESERVED_MAJOR_REV = 16'0000000000000000
+Parameter \QL_RESERVED_MINOR_REV = 16'0000000000000001
+Parameter \QL_RESERVED_DEF_REG_VALUE = 32'11011110111111111010101110101100
+
+13.3.3. Executing AST frontend in derive mode using pre-parsed AST for module `\AL4S3B_FPGA_IP'.
+Parameter \APERWIDTH = 17
+Parameter \APERSIZE = 11
+Parameter \FPGA_REG_BASE_ADDRESS = 17'00000000000000000
+Parameter \FPGA_RAM0_BASE_ADDRESS = 17'00010000000000000
+Parameter \FPGA_RAM1_BASE_ADDRESS = 17'00100000000000000
+Parameter \FPGA_RAM2_BASE_ADDRESS = 17'00110000000000000
+Parameter \FPGA_RAM3_BASE_ADDRESS = 17'01000000000000000
+Parameter \FPGA_RAM4_BASE_ADDRESS = 17'01010000000000000
+Parameter \QL_RESERVED_BASE_ADDRESS = 17'01100000000000000
+Parameter \ADDRWIDTH_FAB_REG = 7
+Parameter \DATAWIDTH_FAB_REG = 32
+Parameter \ADDRWIDTH_FAB_RAMs = 11
+Parameter \FPGA_REG_ID_VALUE_ADR = 7'0000000
+Parameter \FPGA_REV_NUM_ADR = 7'0000001
+Parameter \FPGA_GPIO_IN_REG_ADR = 7'0000010
+Parameter \FPGA_GPIO_OUT_REG_ADR = 7'0000011
+Parameter \FPGA_GPIO_OE_REG_ADR = 7'0000100
+Parameter \AL4S3B_DEVICE_ID = 16'0000000000000000
+Parameter \AL4S3B_REV_LEVEL = 0
+Parameter \AL4S3B_GPIO_REG = 8'00000000
+Parameter \AL4S3B_GPIO_OE_REG = 8'00000000
+Parameter \AL4S3B_DEF_REG_VALUE = 32'11111010101111011110111110101100
+Parameter \DEFAULT_READ_VALUE = 32'10111010110111111010101110101100
+Parameter \DEFAULT_CNTR_WIDTH = 3
+Parameter \DEFAULT_CNTR_TIMEOUT = 7
+Parameter \ADDRWIDTH_QL_RESERVED = 7
+Parameter \DATAWIDTH_QL_RESERVED = 32
+Parameter \QL_RESERVED_CUST_PROD_ADR = 7'1111110
+Parameter \QL_RESERVED_REVISIONS_ADR = 7'1111111
+Parameter \QL_RESERVED_CUSTOMER_ID = 8'00000001
+Parameter \QL_RESERVED_PRODUCT_ID = 8'00000000
+Parameter \QL_RESERVED_MAJOR_REV = 16'0000000000000000
+Parameter \QL_RESERVED_MINOR_REV = 16'0000000000000001
+Parameter \QL_RESERVED_DEF_REG_VALUE = 32'11011110111111111010101110101100
+Generating RTLIL representation for module `$paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP'.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:250.1-271.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Parameter \ADDRWIDTH = 7
+Parameter \DATAWIDTH = 32
+Parameter \QL_RESERVED_CUST_PROD_ADR = 7'1111110
+Parameter \QL_RESERVED_REVISIONS_ADR = 7'1111111
+Parameter \QL_RESERVED_CUSTOMER_ID = 8'00000001
+Parameter \QL_RESERVED_PRODUCT_ID = 8'00000000
+Parameter \QL_RESERVED_MAJOR_REV = 16'0000000000000001
+Parameter \QL_RESERVED_MINOR_REV = 16'0000000000000000
+Parameter \QL_RESERVED_DEF_REG_VALUE = 32'11011110111111111010101110101100
+Parameter \DEFAULT_CNTR_WIDTH = 3
+Parameter \DEFAULT_CNTR_TIMEOUT = 7
+
+13.3.4. Executing AST frontend in derive mode using pre-parsed AST for module `\AL4S3B_FPGA_QL_Reserved'.
+Parameter \ADDRWIDTH = 7
+Parameter \DATAWIDTH = 32
+Parameter \QL_RESERVED_CUST_PROD_ADR = 7'1111110
+Parameter \QL_RESERVED_REVISIONS_ADR = 7'1111111
+Parameter \QL_RESERVED_CUSTOMER_ID = 8'00000001
+Parameter \QL_RESERVED_PRODUCT_ID = 8'00000000
+Parameter \QL_RESERVED_MAJOR_REV = 16'0000000000000001
+Parameter \QL_RESERVED_MINOR_REV = 16'0000000000000000
+Parameter \QL_RESERVED_DEF_REG_VALUE = 32'11011110111111111010101110101100
+Parameter \DEFAULT_CNTR_WIDTH = 3
+Parameter \DEFAULT_CNTR_TIMEOUT = 7
+Generating RTLIL representation for module `$paramod$973bcf0fcbf91c46414d940fc3b7244bd98db237\AL4S3B_FPGA_QL_Reserved'.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165.1-204.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:214.1-223.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Parameter \ADDRWIDTH = 11
+Parameter \DATAWIDTH = 32
+Parameter \AL4S3B_DEF_REG_VALUE = 32'11111010101111011110111110101100
+
+13.3.5. Executing AST frontend in derive mode using pre-parsed AST for module `\AL4S3B_FPGA_RAMs'.
+Parameter \ADDRWIDTH = 11
+Parameter \DATAWIDTH = 32
+Parameter \AL4S3B_DEF_REG_VALUE = 32'11111010101111011110111110101100
+Generating RTLIL representation for module `$paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs'.
+Parameter \ADDRWIDTH = 7
+Parameter \DATAWIDTH = 32
+Parameter \FPGA_REG_ID_VALUE_ADR = 7'0000000
+Parameter \FPGA_REV_NUM_ADR = 7'0000001
+Parameter \FPGA_GPIO_IN_REG_ADR = 7'0000010
+Parameter \FPGA_GPIO_OUT_REG_ADR = 7'0000011
+Parameter \FPGA_GPIO_OE_REG_ADR = 7'0000100
+Parameter \AL4S3B_DEVICE_ID = 16'0000000000000000
+Parameter \AL4S3B_REV_LEVEL = 0
+Parameter \AL4S3B_GPIO_REG = 8'00000000
+Parameter \AL4S3B_GPIO_OE_REG = 8'00000000
+Parameter \AL4S3B_DEF_REG_VALUE = 32'11111010101111011110111110101100
+
+13.3.6. Executing AST frontend in derive mode using pre-parsed AST for module `\AL4S3B_FPGA_Registers'.
+Parameter \ADDRWIDTH = 7
+Parameter \DATAWIDTH = 32
+Parameter \FPGA_REG_ID_VALUE_ADR = 7'0000000
+Parameter \FPGA_REV_NUM_ADR = 7'0000001
+Parameter \FPGA_GPIO_IN_REG_ADR = 7'0000010
+Parameter \FPGA_GPIO_OUT_REG_ADR = 7'0000011
+Parameter \FPGA_GPIO_OE_REG_ADR = 7'0000100
+Parameter \AL4S3B_DEVICE_ID = 16'0000000000000000
+Parameter \AL4S3B_REV_LEVEL = 0
+Parameter \AL4S3B_GPIO_REG = 8'00000000
+Parameter \AL4S3B_GPIO_OE_REG = 8'00000000
+Parameter \AL4S3B_DEF_REG_VALUE = 32'11111010101111011110111110101100
+Generating RTLIL representation for module `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers'.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:203.1-220.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+
+13.3.7. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP
+Used module:         \AL4S3B_FPGA_QL_Reserved
+Used module:         \AL4S3B_FPGA_RAMs
+Used module:             \r2048x8_2048x8
+Used module:             \r512x32_512x32
+Used module:             \r1024x8_1024x8
+Used module:             \r1024x16_1024x16
+Used module:             \r512x16_512x16
+Used module:         \AL4S3B_FPGA_Registers
+Parameter \ADDRWIDTH = 7
+Parameter \DATAWIDTH = 32
+Parameter \QL_RESERVED_CUST_PROD_ADR = 7'1111110
+Parameter \QL_RESERVED_REVISIONS_ADR = 7'1111111
+Parameter \QL_RESERVED_CUSTOMER_ID = 8'00000001
+Parameter \QL_RESERVED_PRODUCT_ID = 8'00000000
+Parameter \QL_RESERVED_MAJOR_REV = 16'0000000000000000
+Parameter \QL_RESERVED_MINOR_REV = 16'0000000000000001
+Parameter \QL_RESERVED_DEF_REG_VALUE = 32'11011110111111111010101110101100
+Parameter \DEFAULT_CNTR_WIDTH = 3
+Parameter \DEFAULT_CNTR_TIMEOUT = 7
+
+13.3.8. Executing AST frontend in derive mode using pre-parsed AST for module `\AL4S3B_FPGA_QL_Reserved'.
+Parameter \ADDRWIDTH = 7
+Parameter \DATAWIDTH = 32
+Parameter \QL_RESERVED_CUST_PROD_ADR = 7'1111110
+Parameter \QL_RESERVED_REVISIONS_ADR = 7'1111111
+Parameter \QL_RESERVED_CUSTOMER_ID = 8'00000001
+Parameter \QL_RESERVED_PRODUCT_ID = 8'00000000
+Parameter \QL_RESERVED_MAJOR_REV = 16'0000000000000000
+Parameter \QL_RESERVED_MINOR_REV = 16'0000000000000001
+Parameter \QL_RESERVED_DEF_REG_VALUE = 32'11011110111111111010101110101100
+Parameter \DEFAULT_CNTR_WIDTH = 3
+Parameter \DEFAULT_CNTR_TIMEOUT = 7
+Generating RTLIL representation for module `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved'.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165.1-204.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:214.1-223.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Parameter \ADDRWIDTH = 11
+Parameter \DATAWIDTH = 32
+Parameter \AL4S3B_DEF_REG_VALUE = 32'11111010101111011110111110101100
+Found cached RTLIL representation for module `$paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs'.
+Parameter \ADDRWIDTH = 7
+Parameter \DATAWIDTH = 32
+Parameter \FPGA_REG_ID_VALUE_ADR = 7'0000000
+Parameter \FPGA_REV_NUM_ADR = 7'0000001
+Parameter \FPGA_GPIO_IN_REG_ADR = 7'0000010
+Parameter \FPGA_GPIO_OUT_REG_ADR = 7'0000011
+Parameter \FPGA_GPIO_OE_REG_ADR = 7'0000100
+Parameter \AL4S3B_DEVICE_ID = 16'0000000000000000
+Parameter \AL4S3B_REV_LEVEL = 0
+Parameter \AL4S3B_GPIO_REG = 8'00000000
+Parameter \AL4S3B_GPIO_OE_REG = 8'00000000
+Parameter \AL4S3B_DEF_REG_VALUE = 32'11111010101111011110111110101100
+Found cached RTLIL representation for module `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers'.
+
+13.3.9. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP
+Used module:         $paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved
+Used module:         $paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs
+Used module:             \r2048x8_2048x8
+Used module:             \r512x32_512x32
+Used module:             \r1024x8_1024x8
+Used module:             \r1024x16_1024x16
+Used module:             \r512x16_512x16
+Used module:         $paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers
+
+13.3.10. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP
+Used module:         $paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved
+Used module:         $paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs
+Used module:             \r2048x8_2048x8
+Used module:             \r512x32_512x32
+Used module:             \r1024x8_1024x8
+Used module:             \r1024x16_1024x16
+Used module:             \r512x16_512x16
+Used module:         $paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers
+Removing unused module `$paramod$973bcf0fcbf91c46414d940fc3b7244bd98db237\AL4S3B_FPGA_QL_Reserved'.
+Removing unused module `\AL4S3B_FPGA_IP'.
+Removing unused module `\AL4S3B_FPGA_Registers'.
+Removing unused module `\AL4S3B_FPGA_RAMs'.
+Removing unused module `\AL4S3B_FPGA_QL_Reserved'.
+Removed 5 unused modules.
+
+13.4. Executing PROC pass (convert processes to netlists).
+
+13.4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+13.4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$110 in module MULT.
+Marked 2 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$92 in module Q_FRAG.
+Marked 1 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:203$1005 in module $paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.
+Marked 1 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:175$1002 in module $paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.
+Marked 1 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:151$986 in module $paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs.
+Marked 1 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:214$1014 in module $paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.
+Removed 1 dead cases from process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165$1008 in module $paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.
+Marked 4 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165$1008 in module $paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.
+Marked 1 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:142$1006 in module $paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.
+Marked 1 switch rules as full_case in process $proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:250$949 in module $paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP.
+Removed a total of 1 dead cases.
+
+13.4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 11 redundant assignments.
+Promoted 1 assignment to connection.
+
+13.4.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$93'.
+  Set init value: \QZ = 1'0
+
+13.4.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \QST in `\Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$92'.
+Found async reset \QRT in `\Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$92'.
+Found async reset \WBs_RST_i in `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:175$1002'.
+Found async reset \WBs_RST_i in `$paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:151$986'.
+Found async reset \WBs_RST_i in `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:142$1006'.
+
+13.4.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\MULT.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$110'.
+     1/2: $0\Cmult[63:0] [63:32]
+     2/2: $0\Cmult[63:0] [31:0]
+Creating decoders for process `\Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$93'.
+Creating decoders for process `\Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$92'.
+     1/1: $0\QZ[0:0]
+Creating decoders for process `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:203$1005'.
+     1/1: $0\WBs_DAT_o[31:0]
+Creating decoders for process `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:175$1002'.
+     1/3: $0\WBs_ACK_o[0:0]
+     2/3: $0\GPIO_OE_o[7:0]
+     3/3: $0\GPIO_OUT_o[7:0]
+Creating decoders for process `$paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:151$986'.
+     1/1: $0\WBs_ACK_o[0:0]
+Creating decoders for process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:214$1014'.
+     1/1: $0\WBs_DAT_o[31:0]
+Creating decoders for process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165$1008'.
+     1/3: $0\Default_State_nxt[0:0]
+     2/3: $0\WBs_ACK_Default_nxt[0:0]
+     3/3: $0\Default_Cntr_nxt[2:0]
+Creating decoders for process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:142$1006'.
+     1/3: $0\WBs_ACK_o[0:0]
+     2/3: $0\Default_Cntr[2:0]
+     3/3: $0\Default_State[0:0]
+Creating decoders for process `$paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:250$949'.
+     1/1: $0\WBs_RD_DAT[31:0]
+
+13.4.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.\WBs_DAT_o' from process `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:203$1005'.
+No latch inferred for signal `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.\WBs_DAT_o' from process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:214$1014'.
+No latch inferred for signal `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.\Default_State_nxt' from process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165$1008'.
+No latch inferred for signal `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.\Default_Cntr_nxt' from process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165$1008'.
+No latch inferred for signal `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.\WBs_ACK_Default_nxt' from process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165$1008'.
+No latch inferred for signal `$paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP.\WBs_RD_DAT' from process `$paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:250$949'.
+
+13.4.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\MULT.\Cmult' using process `\MULT.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$110'.
+  created direct connection (no actual register cell created).
+Creating register for signal `\Q_FRAG.\QZ' using process `\Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$92'.
+Warning: Complex async reset for dff `\QZ'.
+  created $dffsr cell `$procdff$1085' with positive edge clock and multiple level-sensitive resets.
+Creating register for signal `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.\WBs_ACK_o' using process `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:175$1002'.
+  created $adff cell `$procdff$1086' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.\GPIO_OUT_o' using process `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:175$1002'.
+  created $adff cell `$procdff$1087' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.\GPIO_OE_o' using process `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:175$1002'.
+  created $adff cell `$procdff$1088' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs.\WBs_ACK_o' using process `$paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:151$986'.
+  created $adff cell `$procdff$1089' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.\WBs_ACK_o' using process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:142$1006'.
+  created $adff cell `$procdff$1090' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.\Default_State' using process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:142$1006'.
+  created $adff cell `$procdff$1091' with positive edge clock and positive level reset.
+Creating register for signal `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.\Default_Cntr' using process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:142$1006'.
+  created $adff cell `$procdff$1092' with positive edge clock and positive level reset.
+
+13.4.9. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 4 empty switches in `\MULT.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$110'.
+Removing empty process `MULT.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:4781$110'.
+Removing empty process `Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:0$93'.
+Found and cleaned up 1 empty switch in `\Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$92'.
+Removing empty process `Q_FRAG.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_sim.v:242$92'.
+Found and cleaned up 1 empty switch in `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:203$1005'.
+Removing empty process `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:203$1005'.
+Found and cleaned up 2 empty switches in `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:175$1002'.
+Removing empty process `$paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:175$1002'.
+Removing empty process `$paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:151$986'.
+Found and cleaned up 1 empty switch in `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:214$1014'.
+Removing empty process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:214$1014'.
+Found and cleaned up 4 empty switches in `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165$1008'.
+Removing empty process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:165$1008'.
+Removing empty process `$paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:142$1006'.
+Found and cleaned up 1 empty switch in `$paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:250$949'.
+Removing empty process `$paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP.$proc$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:250$949'.
+Cleaned up 14 empty switches.
+
+13.5. Executing FLATTEN pass (flatten design).
+Deleting now unused module r512x32_512x32.
+Deleting now unused module $paramod$81db1d79379ad9aa0b5fd177e1a6ae54bc48f4c2\AL4S3B_FPGA_Registers.
+Deleting now unused module r1024x16_1024x16.
+Deleting now unused module r2048x8_2048x8.
+Deleting now unused module $paramod$1d31a295c4221da8a7b646b3076b35b8b3785c4c\AL4S3B_FPGA_RAMs.
+Deleting now unused module r1024x8_1024x8.
+Deleting now unused module r512x16_512x16.
+Deleting now unused module $paramod$13dad1187e6a2bd5a259ebf05701b2c1128aa6fb\AL4S3B_FPGA_QL_Reserved.
+Deleting now unused module $paramod$3a16afebb64c3632ed70db21dd842a119548fad7\AL4S3B_FPGA_IP.
+
+13.6. Executing TRIBUF pass.
+
+13.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 2 unused cells and 49 unused wires.
+
+13.9. Executing DEMINOUT pass (demote inout ports to input or output).
+
+13.10. Executing OPT pass (performing simple optimizations).
+
+13.10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 18 cells.
+
+13.10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+13.10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+13.10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.10.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 18 unused wires.
+
+13.10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+13.10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+13.10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+13.10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.10.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.10.16. Finished OPT passes. (There is nothing left to do.)
+
+13.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.13. Executing CHECK pass (checking for obvious problems).
+checking module top..
+found and reported 0 problems.
+
+13.14. Executing OPT pass (performing simple optimizations).
+
+13.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+13.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+13.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.14.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.14.9. Finished OPT passes. (There is nothing left to do.)
+
+13.15. Executing WREDUCE pass (reducing word size of cells).
+Removed top 2 bits (of 3) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:192$1010 ($eq).
+Removed top 4 bits (of 7) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:166$993 ($eq).
+Removed top 5 bits (of 7) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procmux$1035_CMP0 ($eq).
+Removed top 6 bits (of 7) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procmux$1036_CMP0 ($eq).
+Removed top 5 bits (of 7) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:165$987 ($eq).
+Removed top 1 bits (of 4) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:238$945 ($eq).
+Removed top 1 bits (of 4) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:235$943 ($eq).
+Removed top 1 bits (of 4) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:232$941 ($eq).
+Removed top 2 bits (of 4) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:229$939 ($eq).
+Removed top 2 bits (of 4) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:226$937 ($eq).
+Removed top 3 bits (of 4) from port B of cell top.$flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:223$935 ($eq).
+
+13.16. Executing PEEPOPT pass (run peephole optimizers).
+
+13.17. Executing PMUXTREE pass.
+
+13.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 8 unused cells and 15 unused wires.
+
+13.19. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module top:
+  creating $macc model for $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$sub$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:185$1009 ($sub).
+  creating $alu model for $macc $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$sub$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:185$1009.
+  creating $alu cell for $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$sub$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:185$1009: $auto$alumacc.cc:485:replace_alu$1149
+  created 1 $alu and 0 $macc cells.
+
+13.20. Executing OPT pass (performing simple optimizations).
+
+13.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+13.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+13.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.20.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.20.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.20.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.20.9. Finished OPT passes. (There is nothing left to do.)
+
+13.21. Executing FSM pass (extract and optimize FSM).
+
+13.21.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+13.21.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+13.21.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+13.21.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.21.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+13.21.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+13.21.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+13.21.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+13.22. Executing OPT pass (performing simple optimizations).
+
+13.22.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.22.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.22.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.22.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.22.5. Finished fast OPT passes.
+
+13.23. Executing MEMORY pass.
+
+13.23.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+13.23.2. Executing MEMORY_DFF pass (merging $dff cells to $memrd and $memwr).
+
+13.23.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.23.4. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+13.23.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.23.6. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+13.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.25. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+13.26. Executing PP3_BRAMINIT pass.
+cell type $auto$alumacc.cc:485:replace_alu$1149
+cell type $auto$pmuxtree.cc:35:or_generator$1101
+cell type $auto$pmuxtree.cc:35:or_generator$1109
+cell type $auto$pmuxtree.cc:37:or_generator$1113
+cell type $auto$pmuxtree.cc:37:or_generator$1145
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1097
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1099
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1103
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1105
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1107
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1111
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1115
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1121
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1123
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1125
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1127
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1129
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1131
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1137
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1139
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1141
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1143
+cell type $auto$pmuxtree.cc:65:recursive_mux_generator$1147
+cell type $flatten\u_AL4S3B_FPGA_IP.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:220$934
+cell type $flatten\u_AL4S3B_FPGA_IP.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:223$936
+cell type $flatten\u_AL4S3B_FPGA_IP.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:226$938
+cell type $flatten\u_AL4S3B_FPGA_IP.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:229$940
+cell type $flatten\u_AL4S3B_FPGA_IP.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:232$942
+cell type $flatten\u_AL4S3B_FPGA_IP.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:235$944
+cell type $flatten\u_AL4S3B_FPGA_IP.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:238$946
+cell type $flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:220$933
+cell type $flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:223$935
+cell type $flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:226$937
+cell type $flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:229$939
+cell type $flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:232$941
+cell type $flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:235$943
+cell type $flatten\u_AL4S3B_FPGA_IP.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:238$945
+cell type $flatten\u_AL4S3B_FPGA_IP.$or$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:244$947
+cell type $flatten\u_AL4S3B_FPGA_IP.$or$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_IP.v:244$948
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:209$1011
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:209$1013
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:192$1010
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$not$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:209$1012
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$or$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_QL_Reserved.v:154$1007
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$procdff$1090
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$procdff$1091
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$procdff$1092
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$procmux$1044_CMP0
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$procmux$1045_CMP0
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$procmux$1052
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$procmux$1053_CMP0
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_QL_Reserved.$procmux$1056
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:138$959
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:138$960
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:138$962
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:139$963
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:139$964
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:139$966
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:140$967
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:140$968
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:140$970
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:141$971
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:141$972
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:141$974
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:142$975
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:142$976
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:142$978
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:146$983
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:146$985
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$not$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:138$961
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$or$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:146$979
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$or$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:146$980
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$or$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:146$981
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$or$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_RAMs.v:146$982
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_RAMs.$procdff$1089
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:165$988
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:165$989
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:165$990
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:165$992
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:166$994
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:166$995
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:166$996
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:166$998
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:170$1001
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:170$999
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:165$987
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$eq$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:166$993
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$logic_and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:187$1003
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$logic_and$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:192$1004
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$not$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Registers.v:165$991
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procdff$1086
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procdff$1087
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procdff$1088
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procmux$1035_CMP0
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procmux$1036_CMP0
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procmux$1037_CMP0
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procmux$1038
+cell type $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$procmux$1040
+cell type $or$/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/AL4S3B_FPGA_Top.v:174$38
+cell type u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RAM_INST
+found ram block
+Processing u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RAM_INST : init_512x16.hex
+cell type u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RAM_INST
+found ram block
+Processing u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RAM_INST : init_1024x16.hex
+cell type u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM2_INST.RAM_INST
+found ram block
+Processing u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM2_INST.RAM_INST : init_1024x8.hex
+Attempt to initialize non existent address 1024
+Attempt to initialize non existent address 1024
+Attempt to initialize non existent address 1024
+Attempt to initialize non existent address 1024
+cell type u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST
+found ram block
+Processing u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST : init_512x32.hex
+cell type u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.RAM_INST
+found ram block
+Processing u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.RAM_INST : init_2048x8.hex
+cell type u_AL4S3B_FPGA_IP.u_bipad_I0
+cell type u_AL4S3B_FPGA_IP.u_bipad_I1
+cell type u_AL4S3B_FPGA_IP.u_bipad_I2
+cell type u_AL4S3B_FPGA_IP.u_bipad_I3
+cell type u_AL4S3B_FPGA_IP.u_bipad_I4
+cell type u_AL4S3B_FPGA_IP.u_bipad_I5
+cell type u_AL4S3B_FPGA_IP.u_bipad_I6
+cell type u_AL4S3B_FPGA_IP.u_bipad_I7
+cell type u_gclkbuff_clock
+cell type u_gclkbuff_reset
+cell type u_qlal4s3b_cell_macro
+
+13.27. Executing TECHMAP pass (map to technology primitives).
+
+13.27.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__QUICKLOGIC_RAMB16K'.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v:21: Warning: Identifier `\VCC' is implicitly declared.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v:22: Warning: Identifier `\GND' is implicitly declared.
+Generating RTLIL representation for module `\$__QUICKLOGIC_RAMB8K'.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v:239: Warning: Identifier `\GND' is implicitly declared.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v:240: Warning: Identifier `\VCC' is implicitly declared.
+Generating RTLIL representation for module `\RAM_8K_BLK'.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v:539: Warning: Range [17:0] select out of bounds on signal `\out_reg0': Setting 2 MSB bits to undef.
+Generating RTLIL representation for module `\RAM_16K_BLK'.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v:825: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 4 MSB bits to undef.
+Generating RTLIL representation for module `\FIFO_8K_BLK'.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v:999: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 20 MSB bits to undef.
+Generating RTLIL representation for module `\FIFO_16K_BLK'.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_brams_map.v:1251: Warning: Range [35:0] select out of bounds on signal `\out_reg0': Setting 4 MSB bits to undef.
+Successfully finished Verilog frontend.
+
+13.27.2. Continuing TECHMAP pass.
+Using template $paramod$9590596143aa67914fb6ac6a1d2320fef39771eb\RAM_8K_BLK for cells of type RAM_8K_BLK.
+Using template $paramod$33431c42cc6d73258d02ff386ffa21c40bbec8fd\RAM_16K_BLK for cells of type RAM_16K_BLK.
+Using template $paramod$908f5c31e7dd28d0d1c954123192dbd93f0e2b80\RAM_8K_BLK for cells of type RAM_8K_BLK.
+Using template $paramod$f043690552d490d7c5a8ccd072274f64c718bc06\RAM_16K_BLK for cells of type RAM_16K_BLK.
+Using template $paramod$7f1e6a7e45004ed308c1098107ad3e38035e62fe\RAM_16K_BLK for cells of type RAM_16K_BLK.
+No more expansions possible.
+
+13.28. Executing OPT pass (performing simple optimizations).
+
+13.28.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.28.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.28.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.28.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 185 unused wires.
+
+13.28.5. Finished fast OPT passes.
+
+13.29. Executing MEMORY_MAP pass (converting $mem cells to logic and flip-flops).
+
+13.30. Executing OPT pass (performing simple optimizations).
+
+13.30.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.30.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.30.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+13.30.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1105:
+      Old ports: A={ 16'0000000000000000 \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RD }, B={ 16'0000000000000000 \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RD }, Y=$auto$rtlil.cc:2037:Mux$1106
+      New ports: A=\u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RD, B=\u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RD, Y=$auto$rtlil.cc:2037:Mux$1106 [15:0]
+      New connections: $auto$rtlil.cc:2037:Mux$1106 [31:16] = 16'0000000000000000
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1121:
+      Old ports: A=32'11011110111111111010101110101100, B=256, Y=$auto$rtlil.cc:2037:Mux$1122
+      New ports: A=1'1, B=1'0, Y=$auto$rtlil.cc:2037:Mux$1122 [2]
+      New connections: { $auto$rtlil.cc:2037:Mux$1122 [31:3] $auto$rtlil.cc:2037:Mux$1122 [1:0] } = { $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] 1'0 $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] 1'0 $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] $auto$rtlil.cc:2037:Mux$1122 [2] 1'0 $auto$rtlil.cc:2037:Mux$1122 [2] 1'0 $auto$rtlil.cc:2037:Mux$1122 [2] 1'0 $auto$rtlil.cc:2037:Mux$1122 [2] 1'1 $auto$rtlil.cc:2037:Mux$1122 [2] 1'0 $auto$rtlil.cc:2037:Mux$1122 [2] 1'0 $auto$rtlil.cc:2037:Mux$1122 [2] 2'00 }
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1137:
+      Old ports: A={ 24'000000000000000000000000 \u_AL4S3B_FPGA_IP.GPIO_In }, B={ 24'000000000000000000000000 \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o }, Y=$auto$rtlil.cc:2037:Mux$1138
+      New ports: A=\u_AL4S3B_FPGA_IP.GPIO_In, B=\u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o, Y=$auto$rtlil.cc:2037:Mux$1138 [7:0]
+      New connections: $auto$rtlil.cc:2037:Mux$1138 [31:8] = 24'000000000000000000000000
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1141:
+      Old ports: A=32'11111010101111011110111110101100, B=1453555287, Y=$auto$rtlil.cc:2037:Mux$1142
+      New ports: A=2'10, B=2'01, Y={ $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [0] }
+      New connections: { $auto$rtlil.cc:2037:Mux$1142 [31:4] $auto$rtlil.cc:2037:Mux$1142 [2:1] } = { $auto$rtlil.cc:2037:Mux$1142 [3] 1'1 $auto$rtlil.cc:2037:Mux$1142 [3] 1'1 $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [0] 5'10101 $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [0] 1'1 $auto$rtlil.cc:2037:Mux$1142 [3] 2'11 $auto$rtlil.cc:2037:Mux$1142 [0] 3'111 $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [0] $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [0] 1'1 $auto$rtlil.cc:2037:Mux$1142 [0] }
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1123:
+      Old ports: A=$auto$rtlil.cc:2037:Mux$1122, B=1, Y=\u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved
+      New ports: A={ 1'1 $auto$rtlil.cc:2037:Mux$1122 [2] 1'0 }, B=3'001, Y={ \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [8] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [0] }
+      New connections: { \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [31:9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [7:3] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [1] } = { \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 }
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1139:
+      Old ports: A=$auto$rtlil.cc:2037:Mux$1138, B={ 24'000000000000000000000000 \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o }, Y=$auto$rtlil.cc:2037:Mux$1140
+      New ports: A=$auto$rtlil.cc:2037:Mux$1138 [7:0], B=\u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o, Y=$auto$rtlil.cc:2037:Mux$1140 [7:0]
+      New connections: $auto$rtlil.cc:2037:Mux$1140 [31:8] = 24'000000000000000000000000
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1143:
+      Old ports: A=$auto$rtlil.cc:2037:Mux$1142, B=256, Y=$auto$rtlil.cc:2037:Mux$1144
+      New ports: A={ $auto$rtlil.cc:2037:Mux$1142 [3] $auto$rtlil.cc:2037:Mux$1142 [3] 1'1 $auto$rtlil.cc:2037:Mux$1142 [0] }, B=4'1000, Y={ $auto$rtlil.cc:2037:Mux$1144 [8] $auto$rtlil.cc:2037:Mux$1144 [3:2] $auto$rtlil.cc:2037:Mux$1144 [0] }
+      New connections: { $auto$rtlil.cc:2037:Mux$1144 [31:9] $auto$rtlil.cc:2037:Mux$1144 [7:4] $auto$rtlil.cc:2037:Mux$1144 [1] } = { $auto$rtlil.cc:2037:Mux$1144 [3:2] $auto$rtlil.cc:2037:Mux$1144 [3:2] $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [2] 1'0 $auto$rtlil.cc:2037:Mux$1144 [2] 1'0 $auto$rtlil.cc:2037:Mux$1144 [2] $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [2] $auto$rtlil.cc:2037:Mux$1144 [3:2] $auto$rtlil.cc:2037:Mux$1144 [2] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [2] $auto$rtlil.cc:2037:Mux$1144 [2] $auto$rtlil.cc:2037:Mux$1144 [2] $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [0] }
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1097:
+      Old ports: A={ 24'000000000000000000000000 \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.RD }, B=\u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved, Y=$auto$rtlil.cc:2037:Mux$1098
+      New ports: A={ 2'00 \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.RD }, B={ \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [8] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [0] }, Y=$auto$rtlil.cc:2037:Mux$1098 [9:0]
+      New connections: $auto$rtlil.cc:2037:Mux$1098 [31:10] = { $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] 1'0 $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] 1'0 $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] $auto$rtlil.cc:2037:Mux$1098 [9] 1'0 $auto$rtlil.cc:2037:Mux$1098 [9] 1'0 $auto$rtlil.cc:2037:Mux$1098 [9] 1'0 }
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1147:
+      Old ports: A=$auto$rtlil.cc:2037:Mux$1144, B=$auto$rtlil.cc:2037:Mux$1140, Y=\u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg
+      New ports: A={ $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [2] $auto$rtlil.cc:2037:Mux$1144 [8] $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [3] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [3:2] $auto$rtlil.cc:2037:Mux$1144 [0] $auto$rtlil.cc:2037:Mux$1144 [0] }, B={ 4'0000 $auto$rtlil.cc:2037:Mux$1140 [7:0] }, Y={ \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [15] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [12] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9:0] }
+      New connections: { \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [31:16] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [14:13] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [11:10] } = { \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [15] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [15] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [15] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [12] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [15] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [15] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [15] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [12] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] }
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1107:
+      Old ports: A=32'10111010110111111010101110101100, B=\u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg, Y=$auto$rtlil.cc:2037:Mux$1108
+      New ports: A=15'111001110101100, B={ 1'0 \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [12] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [15] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [12] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9] \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9:0] }, Y={ $auto$rtlil.cc:2037:Mux$1108 [22] $auto$rtlil.cc:2037:Mux$1108 [17] $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [12] $auto$rtlil.cc:2037:Mux$1108 [10:0] }
+      New connections: { $auto$rtlil.cc:2037:Mux$1108 [31:23] $auto$rtlil.cc:2037:Mux$1108 [21:18] $auto$rtlil.cc:2037:Mux$1108 [16] $auto$rtlil.cc:2037:Mux$1108 [14:13] $auto$rtlil.cc:2037:Mux$1108 [11] } = { $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [10] $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [9] $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [12] $auto$rtlil.cc:2037:Mux$1108 [9] 1'0 $auto$rtlil.cc:2037:Mux$1108 [9] $auto$rtlil.cc:2037:Mux$1108 [10] $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [9] $auto$rtlil.cc:2037:Mux$1108 [10:9] $auto$rtlil.cc:2037:Mux$1108 [9] }
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $auto$pmuxtree.cc:65:recursive_mux_generator$1111:
+      Old ports: A=$auto$rtlil.cc:2037:Mux$1108, B={ 16'0000000000000000 $auto$rtlil.cc:2037:Mux$1106 [15:0] }, Y=$auto$rtlil.cc:2037:Mux$1112
+      New ports: A={ $auto$rtlil.cc:2037:Mux$1108 [12] $auto$rtlil.cc:2037:Mux$1108 [22] $auto$rtlil.cc:2037:Mux$1108 [10] $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [17] $auto$rtlil.cc:2037:Mux$1108 [9] $auto$rtlil.cc:2037:Mux$1108 [15] $auto$rtlil.cc:2037:Mux$1108 [10:9] $auto$rtlil.cc:2037:Mux$1108 [12] $auto$rtlil.cc:2037:Mux$1108 [9] $auto$rtlil.cc:2037:Mux$1108 [10:0] }, B={ 6'000000 $auto$rtlil.cc:2037:Mux$1106 [15:0] }, Y={ $auto$rtlil.cc:2037:Mux$1112 [26] $auto$rtlil.cc:2037:Mux$1112 [22:21] $auto$rtlil.cc:2037:Mux$1112 [18:0] }
+      New connections: { $auto$rtlil.cc:2037:Mux$1112 [31:27] $auto$rtlil.cc:2037:Mux$1112 [25:23] $auto$rtlil.cc:2037:Mux$1112 [20:19] } = { $auto$rtlil.cc:2037:Mux$1112 [18] $auto$rtlil.cc:2037:Mux$1112 [21] $auto$rtlil.cc:2037:Mux$1112 [18] $auto$rtlil.cc:2037:Mux$1112 [16] $auto$rtlil.cc:2037:Mux$1112 [18] $auto$rtlil.cc:2037:Mux$1112 [16] 1'0 $auto$rtlil.cc:2037:Mux$1112 [16] $auto$rtlil.cc:2037:Mux$1112 [18] $auto$rtlil.cc:2037:Mux$1112 [18] }
+  Optimizing cells in module \top.
+Performed a total of 11 changes.
+
+13.30.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.30.6. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.30.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.30.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.30.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+13.30.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+
+13.30.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+13.30.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+13.30.13. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.30.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+13.30.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.30.16. Finished OPT passes. (There is nothing left to do.)
+
+13.31. Executing TECHMAP pass (map to technology primitives).
+
+13.31.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+13.31.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $mux.
+Using template $paramod\_90_alu\A_SIGNED=0\B_SIGNED=0\A_WIDTH=3\B_WIDTH=1\Y_WIDTH=3 for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=3 for cells of type $lcu.
+Using extmapper simplemap for cells of type $xor.
+No more expansions possible.
+
+13.32. Executing OPT pass (performing simple optimizations).
+
+13.32.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.32.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 45 cells.
+
+13.32.3. Executing OPT_RMDFF pass (remove dff with constant values).
+
+13.32.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 4 unused cells and 92 unused wires.
+
+13.32.5. Finished fast OPT passes.
+
+13.33. Executing MUXCOVER pass (mapping to wider MUXes).
+Covering MUX trees in module top..
+  Treeifying 211 MUXes:
+    Found tree with 10 MUXes at root \WBs_RD_DAT [0].
+    Found tree with 10 MUXes at root \WBs_RD_DAT [1].
+    Found tree with 10 MUXes at root \WBs_RD_DAT [2].
+    Found tree with 10 MUXes at root \WBs_RD_DAT [3].
+    Found tree with 10 MUXes at root \WBs_RD_DAT [4].
+    Found tree with 10 MUXes at root \WBs_RD_DAT [5].
+    Found tree with 10 MUXes at root \WBs_RD_DAT [6].
+    Found tree with 10 MUXes at root \WBs_RD_DAT [7].
+    Found tree with 9 MUXes at root \WBs_RD_DAT [8].
+    Found tree with 5 MUXes at root \WBs_RD_DAT [9].
+    Found tree with 5 MUXes at root \WBs_RD_DAT [10].
+    Found tree with 5 MUXes at root \WBs_RD_DAT [11].
+    Found tree with 5 MUXes at root \WBs_RD_DAT [12].
+    Found tree with 5 MUXes at root \WBs_RD_DAT [13].
+    Found tree with 5 MUXes at root \WBs_RD_DAT [14].
+    Found tree with 5 MUXes at root \WBs_RD_DAT [15].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [16].
+    Found tree with 5 MUXes at root \WBs_RD_DAT [17].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [18].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [19].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [20].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [21].
+    Found tree with 4 MUXes at root \WBs_RD_DAT [22].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [23].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [24].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [25].
+    Found tree with 4 MUXes at root \WBs_RD_DAT [26].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [27].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [28].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [29].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [30].
+    Found tree with 3 MUXes at root \WBs_RD_DAT [31].
+    Found tree with 1 MUXes at root \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_nxt.
+    Found tree with 1 MUXes at root \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt [0].
+    Found tree with 1 MUXes at root \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt [1].
+    Found tree with 1 MUXes at root \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt [2].
+    Found tree with 1 MUXes at root \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_Default_nxt.
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1108 [26].
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1108 [28].
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1108 [30].
+    Found tree with 2 MUXes at root $auto$rtlil.cc:2037:Mux$1108 [31].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [0].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [1].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [2].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [3].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [4].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [5].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [6].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [7].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [0].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [1].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [2].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [3].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [4].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [5].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [6].
+    Found tree with 1 MUXes at root $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [7].
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1098 [31].
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1144 [26].
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1144 [31].
+    Found tree with 1 MUXes at root \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2].
+    Found tree with 1 MUXes at root \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9].
+    Found tree with 1 MUXes at root \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [12].
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1112 [28].
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1112 [30].
+    Found tree with 1 MUXes at root $auto$rtlil.cc:2037:Mux$1112 [31].
+    Finished treeification: Found 66 trees.
+  Covering trees:
+    Replaced tree at \WBs_RD_DAT [0]: 3 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [1]: 3 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [2]: 3 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [3]: 3 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [4]: 3 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [5]: 3 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [6]: 3 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [7]: 3 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [8]: 2 MUX2, 0 MUX4, 1 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [9]: 2 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [10]: 2 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [11]: 2 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [12]: 2 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [13]: 2 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [14]: 2 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [15]: 2 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [16]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [17]: 2 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [18]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [19]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [20]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [21]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [22]: 1 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [23]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [24]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [25]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [26]: 1 MUX2, 1 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [27]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [28]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [29]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [30]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \WBs_RD_DAT [31]: 3 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_nxt: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt [0]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt [1]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt [2]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_Default_nxt: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1108 [26]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1108 [28]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1108 [30]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1108 [31]: 2 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [0]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [1]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [2]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [3]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [4]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [5]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [6]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OUT_o[7:0] [7]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [0]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [1]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [2]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [3]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [4]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [5]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [6]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $flatten\u_AL4S3B_FPGA_IP.\u_AL4S3B_FPGA_Registers.$0\GPIO_OE_o[7:0] [7]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1098 [31]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1144 [26]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1144 [31]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \u_AL4S3B_FPGA_IP.WBs_DAT_o_QL_Reserved [2]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [9]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at \u_AL4S3B_FPGA_IP.WBs_DAT_o_FPGA_Reg [12]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1112 [28]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1112 [30]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+    Replaced tree at $auto$rtlil.cc:2037:Mux$1112 [31]: 1 MUX2, 0 MUX4, 0 MUX8, 0 MUX16
+  Added a total of 4 decoder MUXes.
+
+13.34. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.35. Executing DFF2DFFE pass (transform $dff to $dffe where applicable).
+Transforming FF to FF+Enable cells in module top:
+
+13.36. Executing TECHMAP pass (map to technology primitives).
+
+13.36.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_ffs_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_ffs_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFF_NN0_'.
+Generating RTLIL representation for module `\$_DFF_NN1_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PN0_'.
+Generating RTLIL representation for module `\$_DFF_PN1_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFFSR_NPP_'.
+Generating RTLIL representation for module `\$_DFFSR_PPP_'.
+Generating RTLIL representation for module `\$_DFFE_NN_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_PN_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Successfully finished Verilog frontend.
+
+13.36.2. Continuing TECHMAP pass.
+Using template \$_DFF_PP1_ for cells of type $_DFF_PP1_.
+Using template \$_DFF_PP0_ for cells of type $_DFF_PP0_.
+No more expansions possible.
+
+13.37. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+13.38. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+13.39. Executing TECHMAP pass (map to technology primitives).
+
+13.39.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_latches_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_latches_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Generating RTLIL representation for module `\$_DLATCHSR_NNN_'.
+Generating RTLIL representation for module `\$_DLATCHSR_NNP_'.
+Generating RTLIL representation for module `\$_DLATCHSR_NPN_'.
+Generating RTLIL representation for module `\$_DLATCHSR_NPP_'.
+Generating RTLIL representation for module `\$_DLATCHSR_PNN_'.
+Generating RTLIL representation for module `\$_DLATCHSR_PNP_'.
+Generating RTLIL representation for module `\$_DLATCHSR_PPN_'.
+Generating RTLIL representation for module `\$_DLATCHSR_PPP_'.
+Successfully finished Verilog frontend.
+
+13.39.2. Continuing TECHMAP pass.
+No more expansions possible.
+
+13.40. Executing ABC pass (technology mapping using ABC).
+
+13.40.1. Extracting gate netlist of module `\top' to `<abc-temp-dir>/input.blif'..
+Extracted 252 gates and 347 wires to a netlist network with 93 inputs and 82 outputs.
+
+13.40.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + read_lut <yosys-exe-dir>/../share/yosys/quicklogic/pp3_lutdefs.txt 
+ABC: + strash 
+ABC: + ifraig 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + if 
+ABC: + mfs2 
+ABC: + sweep 
+ABC: + eliminate 
+ABC: + if 
+ABC: The network was strashed and balanced before FPGA mapping.
+ABC: + mfs 
+ABC: + lutpack 
+ABC: + dress 
+ABC: Total number of equiv classes                =     111.
+ABC: Participating nodes from both networks       =     241.
+ABC: Participating nodes from the first network   =     111. (  74.50 % of nodes)
+ABC: Participating nodes from the second network  =     130. (  87.25 % of nodes)
+ABC: Node pairs (any polarity)                    =     111. (  74.50 % of names can be moved)
+ABC: Node pairs (same polarity)                   =     103. (  69.13 % of names can be moved)
+ABC: Total runtime =     0.00 sec
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+13.40.1.2. Re-integrating ABC results.
+ABC RESULTS:              $lut cells:      148
+ABC RESULTS:        internal signals:      172
+ABC RESULTS:           input signals:       93
+ABC RESULTS:          output signals:       82
+Removing temp directory.
+
+13.41. Executing TECHMAP pass (map to technology primitives).
+
+13.41.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_ffs_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_ffs_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFF_NN0_'.
+Generating RTLIL representation for module `\$_DFF_NN1_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PN0_'.
+Generating RTLIL representation for module `\$_DFF_PN1_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFFSR_NPP_'.
+Generating RTLIL representation for module `\$_DFFSR_PPP_'.
+Generating RTLIL representation for module `\$_DFFE_NN_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_PN_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Successfully finished Verilog frontend.
+
+13.41.2. Continuing TECHMAP pass.
+No more expansions possible.
+Removed 0 unused cells and 366 unused wires.
+
+13.42. Executing TECHMAP pass (map to technology primitives).
+
+13.42.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_cells_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_cells_map.v' to AST representation.
+Generating RTLIL representation for module `\$_MUX8_'.
+Generating RTLIL representation for module `\$_MUX4_'.
+Generating RTLIL representation for module `\$_MUX_'.
+Generating RTLIL representation for module `\$_NOT_'.
+Generating RTLIL representation for module `\qlal4s3_mult_16x16_cell'.
+/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_cells_map.v:44: Warning: Identifier `\Valid_mult_w' is implicitly declared.
+Successfully finished Verilog frontend.
+
+13.42.2. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_lut_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda/bin/../share/yosys/quicklogic/pp3_lut_map.v' to AST representation.
+Generating RTLIL representation for module `\$lut'.
+Successfully finished Verilog frontend.
+
+13.42.3. Continuing TECHMAP pass.
+Using template $paramod\$lut\WIDTH=2\LUT=4'0001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01100000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'0100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01000000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'1110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'1011 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'1000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'11101111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10000000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01110000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=2\LUT=4'0111 for cells of type $lut.
+Using template \$_MUX4_ for cells of type $_MUX4_.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1111101011111100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00000001 for cells of type $lut.
+Using template \$_MUX8_ for cells of type $_MUX8_.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10101100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00010000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0000000100000000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'00000111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1111001011111111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0000010100000011 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1111111100010000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01001111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0001000100001111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0000000000011111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10110000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1110000111111111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'0001010101010100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'11111000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1010110011001100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'10011111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'11111110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'01011100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1111111111110100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=3\LUT=8'11110100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=4\LUT=16'1111111111110010 for cells of type $lut.
+No more expansions possible.
+Removed 0 unused cells and 484 unused wires.
+
+13.43. Executing Quicklogic_EQN pass (calculate equations for luts).
+
+13.44. Updated 148 of LUT* elements with equation.
+
+13.45. Executing AUTONAME pass.
+Renamed 1120 objects in module top (24 iterations).
+
+13.46. Executing HIERARCHY pass (managing design hierarchy).
+
+13.46.1. Analyzing design hierarchy..
+Top module:  \top
+
+13.46.2. Analyzing design hierarchy..
+Top module:  \top
+Removed 0 unused modules.
+
+13.47. Printing statistics.
+
+=== top ===
+
+   Number of wires:                278
+   Number of wire bits:           1509
+   Number of public wires:         278
+   Number of public wire bits:    1509
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                206
+     LUT2                           68
+     LUT3                           31
+     LUT4                           49
+     bipad                           8
+     dffc                           20
+     dffp                            3
+     gclkbuff                        2
+     mux4x0                         10
+     mux8x0                          9
+     qlal4s3b_cell_macro             1
+     ram8k_2x1_cell_macro            5
+
+13.48. Executing CHECK pass (checking for obvious problems).
+checking module top..
+found and reported 0 problems.
+
+13.49. Executing CLKBUFMAP pass (inserting global clock buffers).
+Inserting $_BUF_ on top.u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_CLK_i[0].
+Inserting $_BUF_ on top.u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_RST_i[0].
+
+13.50. Executing IOPADMAP pass (mapping inputs/outputs to IO-PAD cells).
+Marking already mapped port: bipad.P[0].
+Marking already mapped port: top.GPIO_PIN[0].
+Marking already mapped port: top.GPIO_PIN[1].
+Marking already mapped port: top.GPIO_PIN[2].
+Marking already mapped port: top.GPIO_PIN[3].
+Marking already mapped port: top.GPIO_PIN[4].
+Marking already mapped port: top.GPIO_PIN[5].
+Marking already mapped port: top.GPIO_PIN[6].
+Marking already mapped port: top.GPIO_PIN[7].
+
+13.51. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+13.52. Executing SETUNDEF pass (replace undef values with defined constants).
+
+13.53. Executing HILOMAP pass (mapping to constant drivers).
+
+13.54. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 1125 unused wires.
+
+13.55. Executing CHECK pass (checking for obvious problems).
+checking module top..
+found and reported 0 problems.
+
+14. Printing statistics.
+
+=== top ===
+
+   Number of wires:                388
+   Number of wire bits:            388
+   Number of public wires:         388
+   Number of public wire bits:     388
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                208
+     LUT2                           68
+     LUT3                           31
+     LUT4                           49
+     bipad                           8
+     dffc                           20
+     dffp                            3
+     gclkbuff                        2
+     logic_0                         1
+     logic_1                         1
+     mux4x0                         10
+     mux8x0                          9
+     qlal4s3b_cell_macro             1
+     ram8k_2x1_cell_macro            5
+
+Loading PCF from '/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/qorc-testapps/qf_ramblockinit/fpga/rtl/quickfeather.pcf'...
+Loading pinmap CSV from '/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/arch/ql-eos-s3_wlcsp/pinmap_PU64.csv'...
+Processing cells...
+  type       | net        | pad        | loc      | type     | instance
+ ------------+------------+------------+----------+----------+-----------
+  bipad      | GPIO_PIN(0) | 56         | X28Y3    | BIDIR    | \u_AL4S3B_FPGA_IP.u_bipad_I0
+  bipad      | GPIO_PIN(1) | 59         | X24Y3    | BIDIR    | \u_AL4S3B_FPGA_IP.u_bipad_I1
+  bipad      | GPIO_PIN(2) | 57         | X26Y3    | BIDIR    | \u_AL4S3B_FPGA_IP.u_bipad_I2
+  bipad      | GPIO_PIN(3) | 63         | X18Y3    | BIDIR    | \u_AL4S3B_FPGA_IP.u_bipad_I3
+  bipad      | GPIO_PIN(4) | 62         | X16Y3    | BIDIR    | \u_AL4S3B_FPGA_IP.u_bipad_I4
+  bipad      | GPIO_PIN(5) | 64         | X14Y3    | BIDIR    | \u_AL4S3B_FPGA_IP.u_bipad_I5
+  bipad      | GPIO_PIN(6) | 3          | X12Y3    | BIDIR    | \u_AL4S3B_FPGA_IP.u_bipad_I6
+  bipad      | GPIO_PIN(7) | 2          | X10Y3    | BIDIR    | \u_AL4S3B_FPGA_IP.u_bipad_I7
+
+15. Executing Verilog backend.
+Dumping module `\top'.
+
+16. Executing TECHMAP pass (map to technology primitives).
+
+16.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\logic_0'.
+Generating RTLIL representation for module `\logic_1'.
+Generating RTLIL representation for module `\inpad'.
+Generating RTLIL representation for module `\outpad'.
+Generating RTLIL representation for module `\bipad'.
+Generating RTLIL representation for module `\ckpad'.
+Generating RTLIL representation for module `\qhsckibuff'.
+Generating RTLIL representation for module `\qhsckbuff'.
+Generating RTLIL representation for module `\gclkbuff'.
+Generating RTLIL representation for module `\logic_cell_macro'.
+Generating RTLIL representation for module `\inv'.
+Generating RTLIL representation for module `\mux2x0'.
+Generating RTLIL representation for module `\mux4x0'.
+Generating RTLIL representation for module `\mux8x0'.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\dff'.
+Generating RTLIL representation for module `\dffc'.
+Generating RTLIL representation for module `\dffp'.
+Generating RTLIL representation for module `\dffpc'.
+Generating RTLIL representation for module `\dffe'.
+Generating RTLIL representation for module `\dffec'.
+Generating RTLIL representation for module `\dffepc'.
+Generating RTLIL representation for module `\dffsc'.
+Generating RTLIL representation for module `\qlal4s3b_cell_macro'.
+Generating RTLIL representation for module `\qlal4s3_mult_32x32_cell'.
+Generating RTLIL representation for module `\qlal4s3_mult_16x16_cell'.
+Generating RTLIL representation for module `\qlal4s3_mult_cell_macro'.
+Successfully finished Verilog frontend.
+
+16.2. Continuing TECHMAP pass.
+Using template logic_0 for cells of type logic_0.
+Using template logic_1 for cells of type logic_1.
+No more expansions possible.
+
+17. Executing TECHMAP pass (map to technology primitives).
+
+17.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/share/techmaps/quicklogic/pp3/techmap/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\logic_0'.
+Generating RTLIL representation for module `\logic_1'.
+Generating RTLIL representation for module `\inpad'.
+Generating RTLIL representation for module `\outpad'.
+Generating RTLIL representation for module `\bipad'.
+Generating RTLIL representation for module `\ckpad'.
+Generating RTLIL representation for module `\qhsckibuff'.
+Generating RTLIL representation for module `\qhsckbuff'.
+Generating RTLIL representation for module `\gclkbuff'.
+Generating RTLIL representation for module `\logic_cell_macro'.
+Generating RTLIL representation for module `\inv'.
+Generating RTLIL representation for module `\mux2x0'.
+Generating RTLIL representation for module `\mux4x0'.
+Generating RTLIL representation for module `\mux8x0'.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\dff'.
+Generating RTLIL representation for module `\dffc'.
+Generating RTLIL representation for module `\dffp'.
+Generating RTLIL representation for module `\dffpc'.
+Generating RTLIL representation for module `\dffe'.
+Generating RTLIL representation for module `\dffec'.
+Generating RTLIL representation for module `\dffepc'.
+Generating RTLIL representation for module `\dffsc'.
+Generating RTLIL representation for module `\qlal4s3b_cell_macro'.
+Generating RTLIL representation for module `\qlal4s3_mult_32x32_cell'.
+Generating RTLIL representation for module `\qlal4s3_mult_16x16_cell'.
+Generating RTLIL representation for module `\qlal4s3_mult_cell_macro'.
+Successfully finished Verilog frontend.
+
+17.2. Continuing TECHMAP pass.
+Using template $paramod$ef89328d7363dd7125c1eba8428f7d9cbe4f3212\LUT2 for cells of type LUT2.
+Using template $paramod$0dee8c45763e54f30353b4988d9129c450b64183\LUT3 for cells of type LUT3.
+Using template $paramod$bf21fee4b6975de7353dd955d4b3a8eef751c7c5\LUT2 for cells of type LUT2.
+Using template $paramod$0ef4598ae0ff2bc333862a9196318cb40608789e\LUT4 for cells of type LUT4.
+Using template $paramod$730adfb485ed6cef87eb6b434905db0ddfa9b600\LUT2 for cells of type LUT2.
+Using template $paramod$86fc6f3441a6779c63af6935d48b3ebd1c0460a9\LUT3 for cells of type LUT3.
+Using template $paramod\LUT3\INIT=9'000000001\EQN=8'00110000 for cells of type LUT3.
+Using template $paramod$5439f95b730483be4c800922bcebe9a105e90f4d\LUT4 for cells of type LUT4.
+Using template $paramod$5312816914ac0257eca33ac3be87fd42e64349ca\LUT3 for cells of type LUT3.
+Using template $paramod$31e7ef48236adb2982fb47e1f6f9d00d2ed9db93\LUT4 for cells of type LUT4.
+Using template $paramod$08b61d33fc5053edb3ff48cc7932a6bed21127f8\LUT3 for cells of type LUT3.
+Using template $paramod$03eed137224500a5a8c1bb8d02f1b39dd96a7b82\LUT2 for cells of type LUT2.
+Using template $paramod$d0072a8af4321893630082a1108feac18ea2649c\LUT3 for cells of type LUT3.
+Using template $paramod$62406fbba369c6e49dd2bd988bf64b8f01137108\LUT4 for cells of type LUT4.
+Using template $paramod$7b6b43fbe39c244b2906d0a505bd10847a3c2aee\LUT4 for cells of type LUT4.
+Using template $paramod$7e4bd054dbbe83c893326033e721a854d7384b31\LUT3 for cells of type LUT3.
+Using template $paramod$b5eaef4968cf688f62c7ea7a9ee87e4b3d751632\LUT4 for cells of type LUT4.
+Using template $paramod$a3585111a807d9eb68f35b3cdf72c072f00fd2ee\LUT2 for cells of type LUT2.
+Using template $paramod$3d8b5074d7a57ec09a018a5522f0514962b45f9f\LUT3 for cells of type LUT3.
+Using template $paramod$88388c6c6a4eecfc7de7604fe66ccab36e5a053a\LUT2 for cells of type LUT2.
+Using template $paramod$556b2258b7bf1f8a5c685103c87c4086e25b4a19\LUT3 for cells of type LUT3.
+Using template gclkbuff for cells of type gclkbuff.
+Using template dffc for cells of type dffc.
+Using template $paramod$7c923b411cd9c5ae06f20a7dc0292a7dec2bf7ca\LUT4 for cells of type LUT4.
+Using template $paramod$adb3e2998d36d23e78e72d530fe94019908a146e\bipad for cells of type bipad.
+Using template $paramod$5889d4b459fc53789505bcda48d8ca809f100a73\LUT4 for cells of type LUT4.
+Using template $paramod$7a0a2b3fb5aacb591a1582add5938e766241def6\LUT4 for cells of type LUT4.
+Using template mux8x0 for cells of type mux8x0.
+Using template $paramod$a05482f0aefd17419d352e885b744935e93eea82\LUT3 for cells of type LUT3.
+Using template mux4x0 for cells of type mux4x0.
+Using template $paramod$3494bf91dff70d828c5f5312272dede938de1112\bipad for cells of type bipad.
+Using template $paramod$02aa829d7bb4d3bbae67ad5ee2e5a326704559e9\bipad for cells of type bipad.
+Using template $paramod$ebf4fcd6d119790354476cbd1280841c143db1a7\LUT4 for cells of type LUT4.
+Using template $paramod$d8b4ab69a8b5413c066ad38d899c9d4a3dedc93a\bipad for cells of type bipad.
+Using template $paramod$479164122f6233c90fb1301d4db36001bb032146\bipad for cells of type bipad.
+Using template $paramod$4da62a2f3593426548f45892aaeb7356ad46a6a4\bipad for cells of type bipad.
+Using template $paramod$03fa78d84bd5e07f6e124fa217a4ce84543d615a\bipad for cells of type bipad.
+Using template $paramod$666d57638572eef64b702648a4829c6da6ea5f7a\bipad for cells of type bipad.
+Using template $paramod$8a2b710cf07fc1a26795eace150f0e78d8dba185\LUT3 for cells of type LUT3.
+Using template $paramod$02607b82793e91b0263b969f41023647c9b4f131\LUT3 for cells of type LUT3.
+Using template dffp for cells of type dffp.
+Using template $paramod$8daedccb3d21aa07897a5e78282e1f15fb3db8e6\LUT3 for cells of type LUT3.
+Using template $paramod$4562282fea35fa9a008b45c1a7a2013c28284a1a\LUT4 for cells of type LUT4.
+Using template $paramod$d6994d0c267e294db2ae8ab4933a797e47cb57af\LUT3 for cells of type LUT3.
+Using template $paramod$885d448b152f0d0eb07370269f766062b2b71bdb\LUT4 for cells of type LUT4.
+Using template $paramod$5fff4eed3dfe46da722c8abfad4e43b106987cbf\LUT3 for cells of type LUT3.
+Using template $paramod$fe12650b80e312c5bb4db546ed03c40b6321bc03\LUT3 for cells of type LUT3.
+Using template qlal4s3b_cell_macro for cells of type qlal4s3b_cell_macro.
+No more expansions possible.
+
+18. Executing TECHMAP pass (map to technology primitives).
+
+18.1. Executing Verilog-2005 frontend: /media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_map.v
+Parsing Verilog input from `/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/quicklogic-arch-defs/bin/../share/arch/ql-eos-s3_wlcsp/cells/ram_map.v' to AST representation.
+Generating RTLIL representation for module `\ram8k_2x1_cell_macro'.
+Successfully finished Verilog frontend.
+
+18.2. Continuing TECHMAP pass.
+Using template $paramod$3038ce45d9fca6b99384b1a1eef8329f19808def\ram8k_2x1_cell_macro for cells of type ram8k_2x1_cell_macro.
+Using template $paramod$224e85792c9460b34eafa49a8f77fe96b02aafad\ram8k_2x1_cell_macro for cells of type ram8k_2x1_cell_macro.
+Using template $paramod$c71fdff1eb72c7d43ca02a83589e4160437a8200\ram8k_2x1_cell_macro for cells of type ram8k_2x1_cell_macro.
+Using template $paramod$7728eea2d6df7e0e4caf6eabd57b185b68124883\ram8k_2x1_cell_macro for cells of type ram8k_2x1_cell_macro.
+Using template $paramod$5555aff032c0980da1ccbfb09f31fb06cf5063b2\ram8k_2x1_cell_macro for cells of type ram8k_2x1_cell_macro.
+No more expansions possible.
+
+19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+20. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 2 unused cells and 196 unused wires.
+
+21. Executing SETUNDEF pass (replace undef values with defined constants).
+
+22. Printing statistics.
+
+=== top ===
+
+   Number of wires:               2710
+   Number of wire bits:           3385
+   Number of public wires:        2700
+   Number of public wire bits:    3314
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                206
+     ASSP                            1
+     BIDIR_CELL                      8
+     C_FRAG                         58
+     GMUX_IC                         2
+     Q_FRAG                         23
+     RAM_CE0_FE0_PR0_WSA0_WSB0_VPR      1
+     RAM_CE0_FE0_PR0_WSA1_WSB1_VPR      1
+     RAM_CE1_FE0_PR0_WSA0_WSB0_VPR      1
+     RAM_CE1_FE0_PR0_WSA1_WSB1_VPR      1
+     RAM_CE1_FE0_PR0_WSA2_WSB2_VPR      1
+     T_FRAG                        109
+
+23. Executing JSON backend.
+
+24. Executing Verilog backend.
+Dumping module `\top'.
+
+Warnings: 8 unique messages, 11 total
+End of script. Logfile hash: b83dd8cd68, CPU: user 4.87s system 0.18s, MEM: 440.27 MB peak
+Yosys 0.9+2406 (git sha1 9ac3484, x86_64-conda_cos6-linux-gnu-gcc 1.24.0.133_b0863d8_dirty -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -fdebug-prefix-map=/root/anaconda3/conda-bld/yosys_1607410735049/work=/usr/local/src/conda/yosys-0.8.0_0003_e80fb742f_20201208_122808 -fdebug-prefix-map=/media/coolbreeze413/GALACTICA/work/clients/quicklogic/qorc/github/qorc-sdk/fpga_toolchain_install/v1.3.1/conda=/usr/local/src/conda-prefix -fPIC -Os)
+Time spent: 36% 27x read_verilog (1 sec), 25% 9x techmap (1 sec), ...

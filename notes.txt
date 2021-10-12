@@ -1,3 +1,56 @@
 python3 ./iomuxgen.py --iomuxcsv=./example_breathe/iomux.csv --iomuxbin=./example_breathe/iomux.bin 
 
 python3 ./fpgabincombiner.py --bitstream=./example_breathe/AL4S3B_FPGA_Top_BREATHE.bit --iomuxbin=./example_breathe/iomux.bin --fpgabin=./example_breathe/breathefpga.bin	
+
+
+
+# meminit example, build with symbiflow (tested with v1.3.1)
+use the qorc-sdk toolchain (usually setup with ./envsetup.sh)
+and then compile from root of repo:
+ql_symbiflow -compile -src example_meminit/fpga/rtl -d ql-eos-s3 -t top -v AL4S3B_FPGA_IP.v AL4S3B_FPGA_QL_Reserved.v AL4S3B_FPGA_RAMs.v AL4S3B_FPGA_Registers.v AL4S3B_FPGA_Top.v r1024x16_1024x16.v r1024x8_1024x8.v r2048x8_2048x8.v r512x16_512x16.v r512x32_512x32.v  -p quickfeather.pcf -P PU64 -dump binary
+
+# ram.mem is generated at: example_meminit/fpga/rtl/build/ram.mem
+
+USE reference build outputs directly to verify:
+
+[1] generate meminit binary from ram.mem:
+python3 ./meminitgen.py --meminitfile=example_meminit/reference_outputs/build/ram.mem --meminitbin=example_meminit/meminit.bin
+
+[2] compare with reference meminit binary (generated from symbiflow build)
+compare example_meminit/meminit.bin with example_meminit/reference_outputs/build/top_meminit.bin
+
+They should be the same.
+
+[3] created csv equivalent to pcf file
+use : example_meminit/iomux.csv
+
+[4] generate iomux bin from csv file
+python3 ./iomuxgen.py --iomuxcsv=example_meminit/iomux.csv --iomuxbin=example_meminit/iomux.bin
+
+[5] compare with reference iomux binary (generated from symbiflow build)
+compare example_meminit/iomux.bin with example_meminit/reference_outputs/build/top_iomux.bin
+
+They should be the same
+
+[6] combine bitstream, iomuxbin and meminitbin:
+python3 ./fpgabincombiner.py --bitstream=example_meminit/reference_outputs/build/top.bit --iomuxbin=example_meminit/iomux.bin --meminitbin=example_meminit/meminit.bin --fpgabin=example_meminit/meminitfpga.bin
+
+[7] compare with reference fpga binary (generated from symbiflow build)
+compare example_meminit/meminitfpga.bin with example_meminit/reference_outputs/top.bin
+
+They should be the same
+
+If everything checks out ok, it should behave exactly like the reference fpga binary.
+
+
+General Flow:
+1. ensure ram.mem is generated from synth step.
+2. ensure bitstream is generated as well.
+2. use iomuxgen.py to generate iomuxbin
+3. use meminitgen.py to generate meminitbin
+4. combine bitstream + meminitbin + iomuxbin -> fpgabin, can be flashed onto device.
+
+# DO NOT USE, NOT WORKING YET! pinmap has changed? errors in pcf file!
+# with latest (symbiflow_dailybuild) we can use *.v expansion as well:
+# use only with example_meminit_latest!
+ql_symbiflow -compile -src example_meminit_latest/fpga/rtl -d ql-eos-s3 -t top -v *.v -p quickfeather.pcf -P PU64 -dump binary

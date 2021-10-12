@@ -1,0 +1,10 @@
+#Block Name           x   y   z    pcf_line
+#-------------------- --  --  -    ----
+u_AL4S3B_FPGA_IP.u_bipad_I7  10   3  0  # set_io GPIO_PIN(7) 2
+u_AL4S3B_FPGA_IP.u_bipad_I6  12   3  0  # set_io GPIO_PIN(6) 3
+u_AL4S3B_FPGA_IP.u_bipad_I5  14   3  0  # set_io GPIO_PIN(5) 64
+u_AL4S3B_FPGA_IP.u_bipad_I4  16   3  0  # set_io GPIO_PIN(4) 62
+u_AL4S3B_FPGA_IP.u_bipad_I3  18   3  0  # set_io GPIO_PIN(3) 63
+u_AL4S3B_FPGA_IP.u_bipad_I1  24   3  0  # set_io GPIO_PIN(1) 59
+u_AL4S3B_FPGA_IP.u_bipad_I2  26   3  0  # set_io GPIO_PIN(2) 57
+u_AL4S3B_FPGA_IP.u_bipad_I0  28   3  0  # set_io GPIO_PIN(0) 56

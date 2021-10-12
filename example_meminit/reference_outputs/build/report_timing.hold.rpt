@@ -1,0 +1,1454 @@
+#Timing report of worst 41 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                             Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                       0.000     0.000
+clock source latency                                                                                             0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                         0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                 1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_D_LUT4_O.c_frag.BAB[0] (C_FRAG)                       2.299    19.977
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.909    20.886
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q.QD[0] (Q_FRAG)                                        0.000    20.886
+data arrival time                                                                                                         20.886
+
+clock Sys_Clk0 (rise edge)                                                                                       0.000     0.000
+clock source latency                                                                                             0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                         0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                 1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                0.000    16.285
+cell hold time                                                                                                   0.571    16.856
+data required time                                                                                                        16.856
+--------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                       -16.856
+data arrival time                                                                                                         20.886
+--------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                4.030
+
+
+#Path 2
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                              Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3_D_LUT4_O.c_frag.BAB[0] (C_FRAG)                       2.299    19.977
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.909    20.886
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QD[0] (Q_FRAG)                                        0.000    20.886
+data arrival time                                                                                                          20.886
+
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                 0.000    16.285
+cell hold time                                                                                                    0.571    16.856
+data required time                                                                                                         16.856
+---------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                        -16.856
+data arrival time                                                                                                          20.886
+---------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                 4.030
+
+
+#Path 3
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                              Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QCK[0] (Q_FRAG)                                       1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5_D_LUT4_O.c_frag.BAB[0] (C_FRAG)                       2.299    19.981
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.909    20.890
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QD[0] (Q_FRAG)                                        0.000    20.890
+data arrival time                                                                                                          20.890
+
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QCK[0] (Q_FRAG)                                       1.990    16.289
+clock uncertainty                                                                                                 0.000    16.289
+cell hold time                                                                                                    0.571    16.860
+data required time                                                                                                         16.860
+---------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                        -16.860
+data arrival time                                                                                                          20.890
+---------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                 4.030
+
+
+#Path 4
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                               Incr      Path
+----------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1_D_LUT4_O.c_frag.BAB[0] (C_FRAG)                       2.299    19.977
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.909    20.886
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QD[0] (Q_FRAG)                                        0.000    20.886
+data arrival time                                                                                                           20.886
+
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                  0.000    16.285
+cell hold time                                                                                                     0.571    16.856
+data required time                                                                                                          16.856
+----------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                         -16.856
+data arrival time                                                                                                           20.886
+----------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                  4.030
+
+
+#Path 5
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_2.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_2.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                               Incr      Path
+----------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_2.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_2.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_2_D_LUT4_O.c_frag.BAB[0] (C_FRAG)                       2.299    19.977
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_2_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.909    20.886
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_2.QD[0] (Q_FRAG)                                        0.000    20.886
+data arrival time                                                                                                           20.886
+
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_2.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                  0.000    16.285
+cell hold time                                                                                                     0.571    16.856
+data required time                                                                                                          16.856
+----------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                         -16.856
+data arrival time                                                                                                           20.886
+----------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                  4.030
+
+
+#Path 6
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_3.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_3.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                               Incr      Path
+----------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_3.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_3.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_3_D_LUT4_O.c_frag.BAB[0] (C_FRAG)                       2.299    19.977
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_3_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.909    20.886
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_3.QD[0] (Q_FRAG)                                        0.000    20.886
+data arrival time                                                                                                           20.886
+
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_3.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                  0.000    16.285
+cell hold time                                                                                                     0.571    16.856
+data required time                                                                                                          16.856
+----------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                         -16.856
+data arrival time                                                                                                           20.886
+----------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                  4.030
+
+
+#Path 7
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_6.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_6.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                               Incr      Path
+----------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_6.QCK[0] (Q_FRAG)                                       1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_6.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_6_D_LUT4_O.c_frag.BAB[0] (C_FRAG)                       2.299    19.981
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_6_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.909    20.890
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_6.QD[0] (Q_FRAG)                                        0.000    20.890
+data arrival time                                                                                                           20.890
+
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_6.QCK[0] (Q_FRAG)                                       1.990    16.289
+clock uncertainty                                                                                                  0.000    16.289
+cell hold time                                                                                                     0.571    16.860
+data required time                                                                                                          16.860
+----------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                         -16.860
+data arrival time                                                                                                           20.890
+----------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                  4.030
+
+
+#Path 8
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_7.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_7.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                               Incr      Path
+----------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_7.QCK[0] (Q_FRAG)                                       2.004    16.303
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_7.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.695
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_7_D_LUT4_O.c_frag.BAB[0] (C_FRAG)                       2.299    19.994
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_7_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.909    20.904
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_7.QD[0] (Q_FRAG)                                        0.000    20.904
+data arrival time                                                                                                           20.904
+
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_7.QCK[0] (Q_FRAG)                                       2.004    16.303
+clock uncertainty                                                                                                  0.000    16.303
+cell hold time                                                                                                     0.571    16.874
+data required time                                                                                                          16.874
+----------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                         -16.874
+data arrival time                                                                                                           20.904
+----------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                  4.030
+
+
+#Path 9
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_5.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_5.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                               Incr      Path
+----------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_5.QCK[0] (Q_FRAG)                                       2.004    16.303
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_5.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.695
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_5_D_LUT4_O.c_frag.TAB[0] (C_FRAG)                       2.325    20.020
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_5_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.987    21.008
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_5.QD[0] (Q_FRAG)                                        0.000    21.008
+data arrival time                                                                                                           21.008
+
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_5.QCK[0] (Q_FRAG)                                       2.004    16.303
+clock uncertainty                                                                                                  0.000    16.303
+cell hold time                                                                                                     0.571    16.874
+data required time                                                                                                          16.874
+----------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                         -16.874
+data arrival time                                                                                                           21.008
+----------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                  4.134
+
+
+#Path 10
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                              Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QCK[0] (Q_FRAG)                                       2.004    16.303
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.695
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7_D_LUT4_O.c_frag.TAB[0] (C_FRAG)                       2.325    20.020
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.987    21.008
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QD[0] (Q_FRAG)                                        0.000    21.008
+data arrival time                                                                                                          21.008
+
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QCK[0] (Q_FRAG)                                       2.004    16.303
+clock uncertainty                                                                                                 0.000    16.303
+cell hold time                                                                                                    0.571    16.874
+data required time                                                                                                         16.874
+---------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                        -16.874
+data arrival time                                                                                                          21.008
+---------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                 4.134
+
+
+#Path 11
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_4.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_4.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                               Incr      Path
+----------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_4.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_4_D_LUT4_O.c_frag.TAB[0] (C_FRAG)                       2.325    20.003
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_4_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.987    20.990
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_4.QD[0] (Q_FRAG)                                        0.000    20.990
+data arrival time                                                                                                           20.990
+
+clock Sys_Clk0 (rise edge)                                                                                         0.000     0.000
+clock source latency                                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_4.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                  0.000    16.285
+cell hold time                                                                                                     0.571    16.856
+data required time                                                                                                          16.856
+----------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                         -16.856
+data arrival time                                                                                                           20.990
+----------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                  4.134
+
+
+#Path 12
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                            Incr      Path
+-------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                      0.000     0.000
+clock source latency                                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_D_LUT4_O.c_frag.TAB[0] (C_FRAG)                       2.325    20.003
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.987    20.990
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QD[0] (Q_FRAG)                                        0.000    20.990
+data arrival time                                                                                                        20.990
+
+clock Sys_Clk0 (rise edge)                                                                                      0.000     0.000
+clock source latency                                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                               0.000    16.285
+cell hold time                                                                                                  0.571    16.856
+data required time                                                                                                       16.856
+-------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                      -16.856
+data arrival time                                                                                                        20.990
+-------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                               4.134
+
+
+#Path 13
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                              Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QCK[0] (Q_FRAG)                                       1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6_D_LUT4_O.c_frag.TAB[0] (C_FRAG)                       2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.987    20.994
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QD[0] (Q_FRAG)                                        0.000    20.994
+data arrival time                                                                                                          20.994
+
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QCK[0] (Q_FRAG)                                       1.990    16.289
+clock uncertainty                                                                                                 0.000    16.289
+cell hold time                                                                                                    0.571    16.860
+data required time                                                                                                         16.860
+---------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                        -16.860
+data arrival time                                                                                                          20.994
+---------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                 4.134
+
+
+#Path 14
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                              Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4_D_LUT4_O.c_frag.TAB[0] (C_FRAG)                       2.325    20.003
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.987    20.990
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QD[0] (Q_FRAG)                                        0.000    20.990
+data arrival time                                                                                                          20.990
+
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                 0.000    16.285
+cell hold time                                                                                                    0.571    16.856
+data required time                                                                                                         16.856
+---------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                        -16.856
+data arrival time                                                                                                          20.990
+---------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                 4.134
+
+
+#Path 15
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                              Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2_D_LUT4_O.c_frag.TAB[0] (C_FRAG)                       2.325    20.003
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.987    20.990
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QD[0] (Q_FRAG)                                        0.000    20.990
+data arrival time                                                                                                          20.990
+
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                 0.000    16.285
+cell hold time                                                                                                    0.571    16.856
+data required time                                                                                                         16.856
+---------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                        -16.856
+data arrival time                                                                                                          20.990
+---------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                 4.134
+
+
+#Path 16
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_1.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_1.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                              Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_1.QCK[0] (Q_FRAG)                                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_1.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_1_D_LUT4_O.c_frag.TAB[0] (C_FRAG)                       2.325    20.003
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_1_D_LUT4_O.c_frag.CZ[0] (C_FRAG)                        0.987    20.990
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_1.QD[0] (Q_FRAG)                                        0.000    20.990
+data arrival time                                                                                                          20.990
+
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_1.QCK[0] (Q_FRAG)                                       1.986    16.285
+clock uncertainty                                                                                                 0.000    16.285
+cell hold time                                                                                                    0.571    16.856
+data required time                                                                                                         16.856
+---------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                        -16.856
+data arrival time                                                                                                          20.990
+---------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                 4.134
+
+
+#Path 17
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                            Incr      Path
+-------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                      0.000     0.000
+clock source latency                                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q.QCK[0] (Q_FRAG)                                  2.004    16.303
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q.QZ[0] (Q_FRAG) [clock-to-output]                 1.393    17.695
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt_LUT4_O.c_frag.BSL[0] (C_FRAG)                       2.386    20.081
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt_LUT4_O.c_frag.CZ[0] (C_FRAG)                        1.041    21.122
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q.QD[0] (Q_FRAG)                                   0.000    21.122
+data arrival time                                                                                                        21.122
+
+clock Sys_Clk0 (rise edge)                                                                                      0.000     0.000
+clock source latency                                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q.QCK[0] (Q_FRAG)                                  2.004    16.303
+clock uncertainty                                                                                               0.000    16.303
+cell hold time                                                                                                  0.571    16.874
+data required time                                                                                                       16.874
+-------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                      -16.874
+data arrival time                                                                                                        21.122
+-------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                               4.248
+
+
+#Path 18
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_1.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_1.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                            Incr      Path
+-------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                      0.000     0.000
+clock source latency                                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_1.QCK[0] (Q_FRAG)                                1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_1.QZ[0] (Q_FRAG) [clock-to-output]               1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt_LUT3_O.t_frag.XSL[0] (T_FRAG)                       2.508    20.190
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt_LUT3_O.t_frag.XZ[0] (T_FRAG)                        1.041    21.231
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_1.QD[0] (Q_FRAG)                                 0.000    21.231
+data arrival time                                                                                                        21.231
+
+clock Sys_Clk0 (rise edge)                                                                                      0.000     0.000
+clock source latency                                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_1.QCK[0] (Q_FRAG)                                1.990    16.289
+clock uncertainty                                                                                               0.000    16.289
+cell hold time                                                                                                  0.571    16.860
+data required time                                                                                                       16.860
+-------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                      -16.860
+data arrival time                                                                                                        21.231
+-------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                               4.371
+
+
+#Path 19
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                             Incr      Path
+--------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                       0.000     0.000
+clock source latency                                                                                             0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                         0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                 1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QCK[0] (Q_FRAG)                                  2.004    16.303
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                 1.393    17.695
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_nxt_LUT3_O.t_frag.XB2[0] (T_FRAG)                       2.246    19.941
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_nxt_LUT3_O.t_frag.XZ[0] (T_FRAG)                        1.378    21.319
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QD[0] (Q_FRAG)                                   0.000    21.319
+data arrival time                                                                                                         21.319
+
+clock Sys_Clk0 (rise edge)                                                                                       0.000     0.000
+clock source latency                                                                                             0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                         0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                 1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QCK[0] (Q_FRAG)                                  2.004    16.303
+clock uncertainty                                                                                                0.000    16.303
+cell hold time                                                                                                   0.571    16.874
+data required time                                                                                                        16.874
+--------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                       -16.874
+data arrival time                                                                                                         21.319
+--------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                4.446
+
+
+#Path 20
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_dffc_Q.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                       Incr      Path
+--------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                 0.000     0.000
+clock source latency                                                                                       0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                   0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                          13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                           1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                  1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                 1.393    17.678
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                          2.325    20.003
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                           0.852    20.855
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_nxt_LUT2_O.t_frag.XSL[0] (T_FRAG)                       2.486    23.341
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_nxt_LUT2_O.t_frag.XZ[0] (T_FRAG)                        1.041    24.382
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_dffc_Q.QD[0] (Q_FRAG)                                   0.000    24.382
+data arrival time                                                                                                   24.382
+
+clock Sys_Clk0 (rise edge)                                                                                 0.000     0.000
+clock source latency                                                                                       0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                   0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                          13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                           1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                  1.986    16.285
+clock uncertainty                                                                                          0.000    16.285
+cell hold time                                                                                             0.571    16.856
+data required time                                                                                                  16.856
+--------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                 -16.856
+data arrival time                                                                                                   24.382
+--------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                          7.527
+
+
+#Path 21
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                  Incr      Path
+---------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                            0.000     0.000
+clock source latency                                                                                  0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                              0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                     13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                      1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                  1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                 1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                          2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                           0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_nxt_LUT3_O.t_frag.XA1[0] (T_FRAG)                       2.383    23.243
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_nxt_LUT3_O.t_frag.XZ[0] (T_FRAG)                        1.392    24.634
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QD[0] (Q_FRAG)                                   0.000    24.634
+data arrival time                                                                                              24.634
+
+clock Sys_Clk0 (rise edge)                                                                            0.000     0.000
+clock source latency                                                                                  0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                              0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                     13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                      1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                  1.990    16.289
+clock uncertainty                                                                                     0.000    16.289
+cell hold time                                                                                        0.571    16.860
+data required time                                                                                             16.860
+---------------------------------------------------------------------------------------------------------------------
+data required time                                                                                            -16.860
+data arrival time                                                                                              24.634
+---------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                     7.774
+
+
+#Path 22
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_dffc_Q.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                              Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                       2.004    16.303
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                      1.393    17.695
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                               2.682    20.377
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                0.909    21.286
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_dffc_Q_D_LUT3_O.t_frag.XAB[0] (T_FRAG)                       3.284    24.571
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_dffc_Q_D_LUT3_O.t_frag.XZ[0] (T_FRAG)                        0.909    25.480
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_dffc_Q.QD[0] (Q_FRAG)                                        0.000    25.480
+data arrival time                                                                                                          25.480
+
+clock Sys_Clk0 (rise edge)                                                                                        0.000     0.000
+clock source latency                                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                       2.004    16.303
+clock uncertainty                                                                                                 0.000    16.303
+cell hold time                                                                                                    0.571    16.874
+data required time                                                                                                         16.874
+---------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                        -16.874
+data arrival time                                                                                                          25.480
+---------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                 8.606
+
+
+#Path 23
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_2.QD[0] (Q_FRAG clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                            Incr      Path
+-------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                      0.000     0.000
+clock source latency                                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QCK[0] (Q_FRAG)                                 2.004    16.303
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_State_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                1.393    17.695
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt_LUT2_O.t_frag.XSL[0] (T_FRAG)                       2.422    20.117
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_nxt_LUT2_O.t_frag.XZ[0] (T_FRAG)                        0.975    21.092
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_2.QD[0] (Q_FRAG)                                 5.320    26.412
+data arrival time                                                                                                        26.412
+
+clock Sys_Clk0 (rise edge)                                                                                      0.000     0.000
+clock source latency                                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_QL_Reserved.Default_Cntr_dffp_Q_2.QCK[0] (Q_FRAG)                                1.990    16.289
+clock uncertainty                                                                                               0.000    16.289
+cell hold time                                                                                                  0.571    16.860
+data required time                                                                                                       16.860
+-------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                      -16.860
+data arrival time                                                                                                        26.412
+-------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                               9.551
+
+
+#Path 24
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RAM_INST.RAM_0.WEN1_b1[0] (RAM_CE0_FE0_PR0_WSA1_WSB1_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM0_Wr_Dcd_LUT3_O.t_frag.XA2[0] (T_FRAG)                                              2.545    27.251
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM0_Wr_Dcd_LUT3_O.t_frag.XZ[0] (T_FRAG)                                               1.346    28.597
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RAM_INST.RAM_0.WEN1_b1[0] (RAM_CE0_FE0_PR0_WSA1_WSB1_VPR)                       7.178    35.775
+data arrival time                                                                                                                      35.775
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RAM_INST.RAM_0.CLK1[0] (RAM_CE0_FE0_PR0_WSA1_WSB1_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.127    16.080
+data required time                                                                                                                     16.080
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -16.080
+data arrival time                                                                                                                      35.775
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            19.695
+
+
+#Path 25
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RAM_INST.RAM_0.WEN1_b0[0] (RAM_CE0_FE0_PR0_WSA1_WSB1_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM0_Wr_Dcd_LUT3_O.t_frag.XA2[0] (T_FRAG)                                              2.545    27.251
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM0_Wr_Dcd_LUT3_O.t_frag.XZ[0] (T_FRAG)                                               1.346    28.597
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RAM_INST.RAM_0.WEN1_b0[0] (RAM_CE0_FE0_PR0_WSA1_WSB1_VPR)                       7.026    35.623
+data arrival time                                                                                                                      35.623
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM0_INST.RAM_INST.RAM_0.CLK1[0] (RAM_CE0_FE0_PR0_WSA1_WSB1_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.396    15.811
+data required time                                                                                                                     15.811
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -15.811
+data arrival time                                                                                                                      35.623
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            19.812
+
+
+#Path 26
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.WEN1_0_b1[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM3_Wr_Dcd_LUT2_O.t_frag.XAB[0] (T_FRAG)                                              6.067    30.773
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM3_Wr_Dcd_LUT2_O.t_frag.XZ[0] (T_FRAG)                                               0.909    31.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.WEN1_0_b1[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR)                       5.285    36.967
+data arrival time                                                                                                                      36.967
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.CLK1_0[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.127    16.080
+data required time                                                                                                                     16.080
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -16.080
+data arrival time                                                                                                                      36.967
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            20.887
+
+
+#Path 27
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.WEN1_0_b0[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM3_Wr_Dcd_LUT2_O.t_frag.XAB[0] (T_FRAG)                                              6.067    30.773
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM3_Wr_Dcd_LUT2_O.t_frag.XZ[0] (T_FRAG)                                               0.909    31.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.WEN1_0_b0[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR)                       5.305    36.987
+data arrival time                                                                                                                      36.987
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.CLK1_0[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.396    15.811
+data required time                                                                                                                     15.811
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -15.811
+data arrival time                                                                                                                      36.987
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            21.176
+
+
+#Path 28
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM2_INST.RAM_INST.RAM_0.WEN1_b0[0] (RAM_CE0_FE0_PR0_WSA0_WSB0_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM2_INST.WEN_LUT2_O.t_frag.XSL[0] (T_FRAG)                                               4.588    29.294
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM2_INST.WEN_LUT2_O.t_frag.XZ[0] (T_FRAG)                                                1.041    30.335
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM2_INST.RAM_INST.RAM_0.WEN1_b0[0] (RAM_CE0_FE0_PR0_WSA0_WSB0_VPR)                       8.272    38.607
+data arrival time                                                                                                                      38.607
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM2_INST.RAM_INST.RAM_0.CLK1[0] (RAM_CE0_FE0_PR0_WSA0_WSB0_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.120    16.088
+data required time                                                                                                                     16.088
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -16.088
+data arrival time                                                                                                                      38.607
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            22.519
+
+
+#Path 29
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.RAM_INST.RAM.WEN1_0_b0[0] (RAM_CE1_FE0_PR0_WSA0_WSB0_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.WEN_LUT2_O.t_frag.XAB[0] (T_FRAG)                                               6.026    30.732
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.WEN_LUT2_O.t_frag.XZ[0] (T_FRAG)                                                0.909    31.641
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.RAM_INST.RAM.WEN1_0_b0[0] (RAM_CE1_FE0_PR0_WSA0_WSB0_VPR)                       6.741    38.382
+data arrival time                                                                                                                      38.382
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM4_INST.RAM_INST.RAM.CLK1_0[0] (RAM_CE1_FE0_PR0_WSA0_WSB0_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.396    15.811
+data required time                                                                                                                     15.811
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -15.811
+data arrival time                                                                                                                      38.382
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            22.570
+
+
+#Path 30
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.WEN1_1_b0[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM3_Wr_Dcd_LUT2_O.t_frag.XAB[0] (T_FRAG)                                              6.067    30.773
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM3_Wr_Dcd_LUT2_O.t_frag.XZ[0] (T_FRAG)                                               0.909    31.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.WEN1_1_b0[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR)                       7.175    38.857
+data arrival time                                                                                                                      38.857
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.CLK1_1[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.120    16.088
+data required time                                                                                                                     16.088
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -16.088
+data arrival time                                                                                                                      38.857
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            22.769
+
+
+#Path 31
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RAM_INST.RAM.WEN1_0_b1[0] (RAM_CE1_FE0_PR0_WSA1_WSB1_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM1_Wr_Dcd_LUT2_O.t_frag.XAB[0] (T_FRAG)                                              7.370    32.076
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM1_Wr_Dcd_LUT2_O.t_frag.XZ[0] (T_FRAG)                                               0.909    32.985
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RAM_INST.RAM.WEN1_0_b1[0] (RAM_CE1_FE0_PR0_WSA1_WSB1_VPR)                       6.077    39.062
+data arrival time                                                                                                                      39.062
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RAM_INST.RAM.CLK1_0[0] (RAM_CE1_FE0_PR0_WSA1_WSB1_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.127    16.080
+data required time                                                                                                                     16.080
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -16.080
+data arrival time                                                                                                                      39.062
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            22.982
+
+
+#Path 32
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RAM_INST.RAM.WEN1_0_b0[0] (RAM_CE1_FE0_PR0_WSA1_WSB1_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM1_Wr_Dcd_LUT2_O.t_frag.XAB[0] (T_FRAG)                                              7.370    32.076
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM1_Wr_Dcd_LUT2_O.t_frag.XZ[0] (T_FRAG)                                               0.909    32.985
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RAM_INST.RAM.WEN1_0_b0[0] (RAM_CE1_FE0_PR0_WSA1_WSB1_VPR)                       5.885    38.870
+data arrival time                                                                                                                      38.870
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM1_INST.RAM_INST.RAM.CLK1_0[0] (RAM_CE1_FE0_PR0_WSA1_WSB1_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.396    15.811
+data required time                                                                                                                     15.811
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -15.811
+data arrival time                                                                                                                      38.870
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            23.059
+
+
+#Path 33
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.WEN1_1_b1[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                                                          Incr      Path
+---------------------------------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QCK[0] (Q_FRAG)                                                          1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]                                         1.393    17.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XAB[0] (T_FRAG)                                                  2.325    20.007
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_ACK_o_LUT2_I1.t_frag.XZ[0] (T_FRAG)                                                   0.852    20.859
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XAB[0] (T_FRAG)                                                   2.937    23.797
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.WBs_WE_i_LUT2_I0.t_frag.XZ[0] (T_FRAG)                                                    0.909    24.706
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM3_Wr_Dcd_LUT2_O.t_frag.XAB[0] (T_FRAG)                                              6.067    30.773
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.FB_RAM3_Wr_Dcd_LUT2_O.t_frag.XZ[0] (T_FRAG)                                               0.909    31.682
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.WEN1_1_b1[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR)                       7.155    38.837
+data arrival time                                                                                                                      38.837
+
+clock Sys_Clk0 (rise edge)                                                                                                    0.000     0.000
+clock source latency                                                                                                          0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                                                      0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                                             13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                                              1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_RAMs.RAM3_INST.RAM_INST.RAM.CLK1_1[0] (RAM_CE1_FE0_PR0_WSA2_WSB2_VPR)                          1.908    16.207
+clock uncertainty                                                                                                             0.000    16.207
+cell hold time                                                                                                               -0.642    15.565
+data required time                                                                                                                     15.565
+---------------------------------------------------------------------------------------------------------------------------------------------
+data required time                                                                                                                    -15.565
+data arrival time                                                                                                                      38.837
+---------------------------------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                                            23.272
+
+
+#Path 34
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : out:GPIO_PIN(6)_$out.outpad[0] (.output clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                               Incr      Path
+------------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                         0.000     0.000
+clock source latency                                                                               0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                           0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                  13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                   1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QCK[0] (Q_FRAG)                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OUT_o_dffc_Q_1.QZ[0] (Q_FRAG) [clock-to-output]      1.393    17.678
+u_AL4S3B_FPGA_IP.u_bipad_I6.O_DAT[0] (BIDIR_CELL)                                                  3.226    20.904
+u_AL4S3B_FPGA_IP.u_bipad_I6.O_PAD_$out[0] (BIDIR_CELL)                                             9.726    30.630
+out:GPIO_PIN(6)_$out.outpad[0] (.output)                                                           0.000    30.630
+data arrival time                                                                                           30.630
+
+clock Sys_Clk0 (rise edge)                                                                         0.000     0.000
+clock source latency                                                                               0.000     0.000
+clock uncertainty                                                                                  0.000     0.000
+output external delay                                                                              0.000     0.000
+data required time                                                                                           0.000
+------------------------------------------------------------------------------------------------------------------
+data required time                                                                                          -0.000
+data arrival time                                                                                           30.630
+------------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                 30.630
+
+
+#Path 35
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : out:GPIO_PIN(3)_$out.outpad[0] (.output clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                              Incr      Path
+-----------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QCK[0] (Q_FRAG)                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_4.QZ[0] (Q_FRAG) [clock-to-output]      1.393    17.678
+u_AL4S3B_FPGA_IP.u_bipad_I3.O_EN[0] (BIDIR_CELL)                                                  3.262    20.940
+u_AL4S3B_FPGA_IP.u_bipad_I3.O_PAD_$out[0] (BIDIR_CELL)                                           10.040    30.980
+out:GPIO_PIN(3)_$out.outpad[0] (.output)                                                          0.000    30.980
+data arrival time                                                                                          30.980
+
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+clock uncertainty                                                                                 0.000     0.000
+output external delay                                                                             0.000     0.000
+data required time                                                                                          0.000
+-----------------------------------------------------------------------------------------------------------------
+data required time                                                                                         -0.000
+data arrival time                                                                                          30.980
+-----------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                30.980
+
+
+#Path 36
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : out:GPIO_PIN(4)_$out.outpad[0] (.output clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                              Incr      Path
+-----------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QCK[0] (Q_FRAG)                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_3.QZ[0] (Q_FRAG) [clock-to-output]      1.393    17.678
+u_AL4S3B_FPGA_IP.u_bipad_I4.O_EN[0] (BIDIR_CELL)                                                  3.262    20.940
+u_AL4S3B_FPGA_IP.u_bipad_I4.O_PAD_$out[0] (BIDIR_CELL)                                           10.040    30.980
+out:GPIO_PIN(4)_$out.outpad[0] (.output)                                                          0.000    30.980
+data arrival time                                                                                          30.980
+
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+clock uncertainty                                                                                 0.000     0.000
+output external delay                                                                             0.000     0.000
+data required time                                                                                          0.000
+-----------------------------------------------------------------------------------------------------------------
+data required time                                                                                         -0.000
+data arrival time                                                                                          30.980
+-----------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                30.980
+
+
+#Path 37
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : out:GPIO_PIN(5)_$out.outpad[0] (.output clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                              Incr      Path
+-----------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QCK[0] (Q_FRAG)                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_2.QZ[0] (Q_FRAG) [clock-to-output]      1.393    17.678
+u_AL4S3B_FPGA_IP.u_bipad_I5.O_EN[0] (BIDIR_CELL)                                                  3.262    20.940
+u_AL4S3B_FPGA_IP.u_bipad_I5.O_PAD_$out[0] (BIDIR_CELL)                                           10.040    30.980
+out:GPIO_PIN(5)_$out.outpad[0] (.output)                                                          0.000    30.980
+data arrival time                                                                                          30.980
+
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+clock uncertainty                                                                                 0.000     0.000
+output external delay                                                                             0.000     0.000
+data required time                                                                                          0.000
+-----------------------------------------------------------------------------------------------------------------
+data required time                                                                                         -0.000
+data arrival time                                                                                          30.980
+-----------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                30.980
+
+
+#Path 38
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : out:GPIO_PIN(7)_$out.outpad[0] (.output clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                            Incr      Path
+---------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                      0.000     0.000
+clock source latency                                                                            0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                        0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                               13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QCK[0] (Q_FRAG)                       1.986    16.285
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q.QZ[0] (Q_FRAG) [clock-to-output]      1.393    17.678
+u_AL4S3B_FPGA_IP.u_bipad_I7.O_EN[0] (BIDIR_CELL)                                                3.262    20.940
+u_AL4S3B_FPGA_IP.u_bipad_I7.O_PAD_$out[0] (BIDIR_CELL)                                         10.040    30.980
+out:GPIO_PIN(7)_$out.outpad[0] (.output)                                                        0.000    30.980
+data arrival time                                                                                        30.980
+
+clock Sys_Clk0 (rise edge)                                                                      0.000     0.000
+clock source latency                                                                            0.000     0.000
+clock uncertainty                                                                               0.000     0.000
+output external delay                                                                           0.000     0.000
+data required time                                                                                        0.000
+---------------------------------------------------------------------------------------------------------------
+data required time                                                                                       -0.000
+data arrival time                                                                                        30.980
+---------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                              30.980
+
+
+#Path 39
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : out:GPIO_PIN(1)_$out.outpad[0] (.output clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                              Incr      Path
+-----------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QCK[0] (Q_FRAG)                       1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_6.QZ[0] (Q_FRAG) [clock-to-output]      1.393    17.682
+u_AL4S3B_FPGA_IP.u_bipad_I1.O_EN[0] (BIDIR_CELL)                                                  3.262    20.944
+u_AL4S3B_FPGA_IP.u_bipad_I1.O_PAD_$out[0] (BIDIR_CELL)                                           10.040    30.984
+out:GPIO_PIN(1)_$out.outpad[0] (.output)                                                          0.000    30.984
+data arrival time                                                                                          30.984
+
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+clock uncertainty                                                                                 0.000     0.000
+output external delay                                                                             0.000     0.000
+data required time                                                                                          0.000
+-----------------------------------------------------------------------------------------------------------------
+data required time                                                                                         -0.000
+data arrival time                                                                                          30.984
+-----------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                30.984
+
+
+#Path 40
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : out:GPIO_PIN(2)_$out.outpad[0] (.output clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                              Incr      Path
+-----------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QCK[0] (Q_FRAG)                       1.990    16.289
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_5.QZ[0] (Q_FRAG) [clock-to-output]      1.393    17.682
+u_AL4S3B_FPGA_IP.u_bipad_I2.O_EN[0] (BIDIR_CELL)                                                  3.262    20.944
+u_AL4S3B_FPGA_IP.u_bipad_I2.O_PAD_$out[0] (BIDIR_CELL)                                           10.040    30.984
+out:GPIO_PIN(2)_$out.outpad[0] (.output)                                                          0.000    30.984
+data arrival time                                                                                          30.984
+
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+clock uncertainty                                                                                 0.000     0.000
+output external delay                                                                             0.000     0.000
+data required time                                                                                          0.000
+-----------------------------------------------------------------------------------------------------------------
+data required time                                                                                         -0.000
+data arrival time                                                                                          30.984
+-----------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                30.984
+
+
+#Path 41
+Startpoint: u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QZ[0] (Q_FRAG clocked by Sys_Clk0)
+Endpoint  : out:GPIO_PIN(0)_$out.outpad[0] (.output clocked by Sys_Clk0)
+Path Type : hold
+
+Point                                                                                              Incr      Path
+-----------------------------------------------------------------------------------------------------------------
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+u_qlal4s3b_cell_macro.Sys_Clk0[0] (ASSP)                                                          0.000     0.000
+u_gclkbuff_clock.IC[0] (GMUX_IC)                                                                 13.003    13.003
+u_gclkbuff_clock.IZ[0] (GMUX_IC)                                                                  1.296    14.299
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QCK[0] (Q_FRAG)                       2.004    16.303
+u_AL4S3B_FPGA_IP.u_AL4S3B_FPGA_Registers.GPIO_OE_o_dffc_Q_7.QZ[0] (Q_FRAG) [clock-to-output]      1.393    17.695
+u_AL4S3B_FPGA_IP.u_bipad_I0.O_EN[0] (BIDIR_CELL)                                                  3.262    20.957
+u_AL4S3B_FPGA_IP.u_bipad_I0.O_PAD_$out[0] (BIDIR_CELL)                                           10.040    30.997
+out:GPIO_PIN(0)_$out.outpad[0] (.output)                                                          0.000    30.997
+data arrival time                                                                                          30.997
+
+clock Sys_Clk0 (rise edge)                                                                        0.000     0.000
+clock source latency                                                                              0.000     0.000
+clock uncertainty                                                                                 0.000     0.000
+output external delay                                                                             0.000     0.000
+data required time                                                                                          0.000
+-----------------------------------------------------------------------------------------------------------------
+data required time                                                                                         -0.000
+data arrival time                                                                                          30.997
+-----------------------------------------------------------------------------------------------------------------
+slack (MET)                                                                                                30.997
+
+
+#End of timing report

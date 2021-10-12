@@ -42,9 +42,16 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
+        "--meminitbin",
+        type=Path,
+        help="MEMINIT binary",
+        required=False
+    )
+
+    parser.add_argument(
         "--iomuxbin",
         type=Path,
-        help="generated bitstream from EDA Tool",
+        help="IOMUX binary",
         required=True
     )
 
@@ -72,100 +79,10 @@ if __name__ == '__main__':
     #############################################
 
     # ############# MEMINIT BIN #################
-    # # create a meminit bytearray, in the same format as the header array.
-    # # <BLOCK_START_ADDR 4B><BLOCK_WORDCOUNT 4B><<MEM WORD 4B>xBLOCK_WORDCOUNT> x NUM_BLOCKS
-
-    # # initialize the meminit binary byte array
-    # mem_init_bin_bytearray = bytearray()
-
-    # line_parser = re.compile(r'(?P<addr>0x4001[89ab])[xX0-9a-f]+:(?P<data>[xX0-9a-f]+).*')
-
-    # # RAM initialization is always generated as ram.mem
-    # ram_initialization_file_path = Path(args.infile.parent).joinpath("ram.mem")
-    
-    # fp = open(ram_initialization_file_path, 'r')
-    
-    # file_data = fp.readlines()
-
-    # wordcount = 0
-    # prev_addr = None
-    # curr_addr = ""
-    # current_block_start_addr = ""
-    # current_block_memory_words = bytearray()
-
-    # for line in file_data:
-    #     linematch = line_parser.match(line)
-
-    #     if linematch:
-    #         curr_addr = linematch.group('addr')
-    #         curr_data = linematch.group('data')
-    #         #print(curr_addr, curr_data)
-    #     else:
-    #         continue
-
-    #     # the regex pattern ensures that when we move from one block to the next,
-    #     # the curr_addr will change, as we consider only the block level component of addr:
-    #     # 0x4001X -> 0x4001Y is a block transition
-    #     # for each block, we will have the same addr 0x4001X in each consecutive line.
-    #     # each block always starts at 0x4001X000
-    #     # so, we will have block_start_addr (0x4001X000), followed by number of words of memory (4B)
-    #     # and then followed by the actual memory words that will be written in order, starting from
-    #     # the block_start_addr
-
-    #     if prev_addr == None:
-    #         # we are going to start the first block
-    #         prev_addr = curr_addr
-    #         # reset memory wordcount
-    #         wordcount = 0
-    #         # set the block start addr
-    #         current_block_start_addr = prev_addr + "000"
-    #         # init the memory block byte array
-    #         current_block_memory_words = bytearray()
-
-    #     if prev_addr != curr_addr:
-    #         # we are going to start a new block
-    #         # save the block_start_address, memory wordcount, followed by the current block memory words
-    #         #print("current_block_start_addr", current_block_start_addr)
-    #         #print("wordcount", wordcount)
-
-    #         mem_init_bin_bytearray.extend(int(current_block_start_addr, 16).to_bytes(4, "little"))
-    #         mem_init_bin_bytearray.extend(int(wordcount).to_bytes(4, "little"))
-    #         mem_init_bin_bytearray.extend(current_block_memory_words)
-    #         # update the block addr to new one:
-    #         prev_addr = curr_addr
-    #         # reset memory wordcount
-    #         wordcount = 0
-    #         # set the block start addr
-    #         current_block_start_addr = prev_addr + "000"
-    #         # init the memory block byte array
-    #         current_block_memory_words = bytearray()
-
-    #     # add the integer data into the memory block bytearray as 4 LE bytes
-    #     current_block_memory_words.extend(int(curr_data, 16).to_bytes(4, "little"))
-
-    #     # increment memory wordcount for current block
-    #     wordcount += 1
-
-    # # at the end of the loop, the last memory block remains to be saved:
-    # if (wordcount != 0):
-    #     #print("current_block_start_addr", current_block_start_addr)
-    #     #print("wordcount", wordcount)
-    #     mem_init_bin_bytearray.extend(int(current_block_start_addr, 16).to_bytes(4, "little"))
-    #     mem_init_bin_bytearray.extend(int(wordcount).to_bytes(4, "little"))
-    #     mem_init_bin_bytearray.extend(current_block_memory_words) 
- 
-    # meminit_size = len(mem_init_bin_bytearray)
-    # # 1024 words x 4B x 4 blocks + 2 words x 4B x 4 blocks (1024 -> mem, 2 -> addr,count)
-    # #expected_meminit_size = (1024 * 4 * 4) + (2 * 4 * 4)
-    # #print(meminit_size, expected_meminit_size)
-
-    # # add to the fpga binary
-    # fpga_bin_content_byte_array.extend(mem_init_bin_bytearray)
-
-    # # we will also output this to a separate binary file (useful!)
-    # meminit_bin_file_path = Path(args.infile.parent).joinpath(args.infile.stem + "_meminit.bin")
-    # with open(meminit_bin_file_path, 'wb') as meminitbin:
-    #     meminitbin.write(mem_init_bin_bytearray)
+    meminitbin_file_path = args.meminitbin
+    meminit_size = meminitbin_file_path.stat().st_size
+    with open(meminitbin_file_path, 'rb') as meminitbin:
+        fpga_bin_content_byte_array.extend(meminitbin.read())
     # ###########################################
     
     ############# IOMUX BIN ################# 

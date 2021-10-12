@@ -9,6 +9,10 @@
 
 # iterate through the io_config dict, and set the appropriate FBIO_SEL_1 and FBIO_SEL_2 reg values
 
+# final output of the iomux bin file would look like:
+# <REG_ADDR 4B><REG_VALUE 4B>
+# <REG_ADDR 4B><REG_VALUE 4B>
+# ... for each register in the iomux registers used
 
 import csv
 import re

@@ -1,0 +1,32 @@
+# CSV FORMAT SPEC AS BELOW
+#
+# (0)IO_NUM,(1)MODE,(2)PULL,(3)DRIVE,(4)SLEW,(5)SCHMITT,(6)CTRL_SEL,(7)FUNC_SEL
+# 
+# IO_NUM == PAD_NUM in the form of IO_x : IO_0 - IO_45
+# MODE == NONE, INPUT, OUTPUT, INOUT (defaults to INOUT)
+# PULL == NONE, UP, DOWN, KEEPER (defaults to NONE)
+# DRIVE == 2,4,8,12 (defaults to 2)
+# SLEW == SLOW, FAST (defaults to SLOW)
+# SCHMITT == 0,1 (defaults to 0)
+# CTRL_SEL == A0, OTHER, FABRIC (defaults to FABRIC)
+# FUNC_SEL == 0,1 (also called MUX_SEL, defaults to FB_xx function according to IO_x number, if CTRL_SEL==FABRIC, else defaults to 0)
+#
+#
+#
+#set_io GPIO_PIN(7) A2
+#set_io GPIO_PIN(6) B2
+#set_io GPIO_PIN(5) C3
+#set_io GPIO_PIN(4) B3
+#set_io GPIO_PIN(3) A3
+#set_io GPIO_PIN(1) A4
+#set_io GPIO_PIN(2) C5
+#set_io GPIO_PIN(0) B5
+# becomes with mapping to IO_x:
+IO_3,INOUT
+IO_4,INOUT
+IO_5,INOUT
+IO_6,INOUT
+IO_7,INOUT
+IO_10,INOUT
+IO_11,INOUT
+IO_12,INOUT
